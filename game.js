@@ -37,3 +37,27 @@ function DigitalPal () {
     console.log("Happy Birthday to me! I am " + this.age + " old!")
   }
 }
+
+let dog = new DigitalPal()
+
+dog.outside = true
+dog.bark = function() {
+  console.log("Woof! Woof!")
+}
+dog.goOutside = function() {
+  if (this.outside) {
+    console.log("We're already outside though...")
+  } else {
+    console.log("Yay! I love the outdoors!")
+    this.outside = true
+    this.bark()
+  }
+}
+dog.goInside = function() {
+  if (this.outside) {
+    console.log("Do we have to? Fine...")
+    this.outside = false
+  } else {
+    console.log("I'm already inside...")
+  }
+}
