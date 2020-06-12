@@ -61,3 +61,23 @@ dog.goInside = function() {
     console.log("I'm already inside...")
   }
 }
+
+
+let cat = new DigitalPal()
+
+cat.houseCondition = 100
+cat.meow = function() {
+  console.log("Meow! Meow!")
+}
+cat.destroyFurniture() {
+  if (this.houseCondition > 0) {
+    this.houseCondition -= 10
+    console.log("MUAHAHAHAHA! TAKE THAT FURNITURE!")
+    this.bored = false
+    this.sleepy = true
+  }
+}
+cat.buyNewFurniture = function() {
+  this.houseCondition += 50
+  console.log("Are you sure about that?")
+}
