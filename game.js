@@ -69,7 +69,7 @@ cat.houseCondition = 100
 cat.meow = function() {
   console.log("Meow! Meow!")
 }
-cat.destroyFurniture() {
+cat.destroyFurniture = function() {
   if (this.houseCondition > 0) {
     this.houseCondition -= 10
     console.log("MUAHAHAHAHA! TAKE THAT FURNITURE!")
