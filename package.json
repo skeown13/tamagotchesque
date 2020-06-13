@@ -1,0 +1,19 @@
+{
+  "name": "tamagotchesque",
+  "version": "1.0.0",
+  "description": "A tamagotchi type game played in the terminal.",
+  "main": "game.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skeown13/tamagotchesque.git"
+  },
+  "author": "skeown13",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skeown13/tamagotchesque/issues"
+  },
+  "homepage": "https://github.com/skeown13/tamagotchesque#readme"
+}
