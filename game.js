@@ -1,3 +1,5 @@
+let inquirer = require("inquirer")
+
 function DigitalPal () {
   this.hungry = false
   this.sleepy = false
