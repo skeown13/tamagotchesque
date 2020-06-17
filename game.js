@@ -40,49 +40,6 @@ function DigitalPal () {
   }
 }
 
-let dog = new DigitalPal()
-
-dog.outside = true
-dog.bark = function() {
-  console.log("Woof! Woof!")
-}
-dog.goOutside = function() {
-  if (this.outside) {
-    console.log("We're already outside though...")
-  } else {
-    console.log("Yay! I love the outdoors!")
-    this.outside = true
-    this.bark()
-  }
-}
-dog.goInside = function() {
-  if (this.outside) {
-    console.log("Do we have to? Fine...")
-    this.outside = false
-  } else {
-    console.log("I'm already inside...")
-  }
-}
-
-
-let cat = new DigitalPal()
-
-cat.houseCondition = 100
-cat.meow = function() {
-  console.log("Meow! Meow!")
-}
-cat.destroyFurniture = function() {
-  if (this.houseCondition > 0) {
-    this.houseCondition -= 10
-    console.log("MUAHAHAHAHA! TAKE THAT FURNITURE!")
-    this.bored = false
-    this.sleepy = true
-  }
-}
-cat.buyNewFurniture = function() {
-  this.houseCondition += 50
-  console.log("Are you sure about that?")
-}
 
 // Game Logic with Inquirer
 
@@ -93,4 +50,55 @@ inquirer.prompt([
     message: "Would you like a Dog Digital Pet or a Cat Digital Pet?",
     choices: ["Dog", "Cat"]
   }
-])
+]).then(function(answers) {
+  if (answers.pet === "Dog") {
+    let dog = new DigitalPal()
+
+    dog.outside = true
+    dog.bark = function() {
+      console.log("Woof! Woof!")
+    }
+    dog.goOutside = function() {
+      if (this.outside) {
+        console.log("We're already outside though...")
+      } else {
+        console.log("Yay! I love the outdoors!")
+        this.outside = true
+        this.bark()
+      }
+    }
+    dog.goInside = function() {
+      if (this.outside) {
+        console.log("Do we have to? Fine...")
+        this.outside = false
+      } else {
+        console.log("I'm already inside...")
+      }
+    }
+
+    dogPet()
+
+  } else if (answers.name === "Cat") {
+    let cat = new DigitalPal()
+
+    cat.houseCondition = 100
+    cat.meow = function() {
+      console.log("Meow! Meow!")
+    }
+    cat.destroyFurniture = function() {
+      if (this.houseCondition > 0) {
+        this.houseCondition -= 10
+        console.log("MUAHAHAHAHA! TAKE THAT FURNITURE!")
+        this.bored = false
+        this.sleepy = true
+      }
+    }
+    cat.buyNewFurniture = function() {
+      this.houseCondition += 50
+      console.log("Are you sure about that?")
+    }
+
+    catPet()
+
+  }
+})
