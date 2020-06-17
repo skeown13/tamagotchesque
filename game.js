@@ -83,3 +83,14 @@ cat.buyNewFurniture = function() {
   this.houseCondition += 50
   console.log("Are you sure about that?")
 }
+
+// Game Logic with Inquirer
+
+inquirer.prompt([
+  {
+    type: "list",
+    name: "pet",
+    message: "Would you like a Dog Digital Pet or a Cat Digital Pet?",
+    choices: ["Dog", "Cat"]
+  }
+])
