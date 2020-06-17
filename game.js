@@ -85,7 +85,7 @@ inquirer.prompt([
 
     // dogPet()
 
-  } else if (answers.name === "Cat") {
+  } else if (answers.pet === "Cat") {
     let cat = new DigitalPal()
 
     cat.houseCondition = 100
@@ -105,7 +105,13 @@ inquirer.prompt([
       console.log("Are you sure about that?")
     }
 
-    catPet()
+    console.log("You choose a Cat!")
+    console.log(' /\\_/\\ ')
+    console.log('(=^.^=)')
+    console.log('(")(")_/ ')
+    console.log('')
+
+    // catPet()
 
   }
 })
