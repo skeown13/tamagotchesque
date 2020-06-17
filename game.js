@@ -76,7 +76,14 @@ inquirer.prompt([
       }
     }
 
-    dogPet()
+    console.log("You choose a Dog!")
+    console.log('  _____  ')
+    console.log('(| . . |)')
+    console.log(' ( (Y) ) ')
+    console.log(' (")_(")_/')
+    console.log('')
+
+    // dogPet()
 
   } else if (answers.name === "Cat") {
     let cat = new DigitalPal()
