@@ -127,28 +127,25 @@ function dogInteract() {
       message: "What would you like to do?",
       choices: ["Go Inside", "Go Outside", "Play", "Eat", "Sleep"]
     }
-  ])
-//   .then(function(answers) {
-//     if (answers.dogOpt === "Go Inside") {
-//       dogInside()
-//     } else if (answers.dogOpt === "Go Outside") {
-//       goOutside()
-//     }
-//   })
-// }
+  ]).then(function(answers) {
+    if (answers.dogOpt === "Go Inside") {
+      dogInside()
+    } 
+  })
+}
 
-// function dogInside() {
-//   dog.goInside()
+function dogInside() {
+  dog.goInside()
 
-//   console.log("     ..  ")
-//   console.log(" .---''-.")
-//   console.log("/________\\")
-//   console.log("|   __   |")
-//   console.log("|[]|  |[]|")
-//   console.log("|  |' |  |")
-//   console.log("'--'--'--'")
-//   console.log("")
-//   console.log("Now what?")
+  console.log("     ..  ")
+  console.log(" .---''-.")
+  console.log("/________\\")
+  console.log("|   __   |")
+  console.log("|[]|  |[]|")
+  console.log("|  |' |  |")
+  console.log("'--'--'--'")
+  console.log("")
+  console.log("Now what?")
 
-//   dogInteract()
-// }
+  dogInteract()
+}
