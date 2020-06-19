@@ -6,7 +6,7 @@ function DigitalPal () {
   this.bored = true
   this.age = 0
 
-  this.feed = function() {
+  this.eat = function() {
     if (this.hungry) {
       console.log("That was yummy!")
       this.hungry = false
@@ -134,6 +134,8 @@ function dogInteract() {
       dogOutside()
     } else if (answers.dogOpt === "Play") {
       dogPlay()
+    } else if (answers.dogOpt === "Eat") {
+      dogEat()
     }
   })
 }
@@ -179,6 +181,12 @@ function dogOutside() {
 
 function dogPlay() {
   dog.play()
+
+  dogInteract()
+}
+
+function dogEat() {
+  dog.eat()
 
   dogInteract()
 }
