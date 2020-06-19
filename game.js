@@ -43,6 +43,8 @@ function DigitalPal () {
 
 // Game Logic with Inquirer
 
+let dog
+
 inquirer.prompt([
   {
     type: "list",
@@ -52,7 +54,7 @@ inquirer.prompt([
   }
 ]).then(function(answers) {
   if (answers.pet === "Dog") {
-    let dog = new DigitalPal()
+    dog = new DigitalPal()
 
     dog.outside = true
     dog.bark = function() {
@@ -83,7 +85,7 @@ inquirer.prompt([
     console.log(' (")_(")_/')
     console.log('')
 
-    // dogPet()
+    dogInteract()
 
   } else if (answers.pet === "Cat") {
     let cat = new DigitalPal()
@@ -116,7 +118,8 @@ inquirer.prompt([
   }
 })
 
-function dogPet() {
+
+function dogInteract() {
   inquirer.prompt([
     {
       type: "list",
@@ -125,4 +128,27 @@ function dogPet() {
       choices: ["Go Inside", "Go Outside", "Play", "Eat", "Sleep"]
     }
   ])
-}
+//   .then(function(answers) {
+//     if (answers.dogOpt === "Go Inside") {
+//       dogInside()
+//     } else if (answers.dogOpt === "Go Outside") {
+//       goOutside()
+//     }
+//   })
+// }
+
+// function dogInside() {
+//   dog.goInside()
+
+//   console.log("     ..  ")
+//   console.log(" .---''-.")
+//   console.log("/________\\")
+//   console.log("|   __   |")
+//   console.log("|[]|  |[]|")
+//   console.log("|  |' |  |")
+//   console.log("'--'--'--'")
+//   console.log("")
+//   console.log("Now what?")
+
+//   dogInteract()
+// }
