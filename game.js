@@ -137,6 +137,8 @@ function dogInteract() {
 }
 
 function dogInside() {
+  dog.bored = false
+  dog.hungry = true
   dog.goInside()
 
   console.log("     ..  ")
