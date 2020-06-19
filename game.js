@@ -115,3 +115,14 @@ inquirer.prompt([
 
   }
 })
+
+function dogPet() {
+  inquirer.prompt([
+    {
+      type: "list",
+      name: "dogOpt",
+      message: "What would you like to do?",
+      choices: ["Go Inside", "Go Outside", "Play", "Eat", "Sleep"]
+    }
+  ])
+}
