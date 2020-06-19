@@ -130,7 +130,9 @@ function dogInteract() {
   ]).then(function(answers) {
     if (answers.dogOpt === "Go Inside") {
       dogInside()
-    } 
+    } else if (answers.dogOpt === "Go Outside") {
+      dogOutside()
+    }
   })
 }
 
@@ -144,6 +146,27 @@ function dogInside() {
   console.log("|[]|  |[]|")
   console.log("|  |' |  |")
   console.log("'--'--'--'")
+  console.log("")
+  console.log("Now what?")
+
+  dogInteract()
+}
+
+function dogOutside() {
+  dog.goOutside()
+
+  console.log("  \\_/ ")
+  console.log("--(_)--")
+  console.log("  / \\ ")
+  // console.log("")
+  console.log("         _               ")
+  console.log("       (\\_/)      _     ")
+  console.log("      (-(_)-)   (\\_/)   ")
+  console.log("       (/_\\)   (-(_)-)  ")
+  console.log("         |      (/_\\)   ")
+  console.log("       (\\|/)     |      ")
+  console.log("        \\|/    (\\|     ")
+  console.log("         |      \\|      ")
   console.log("")
   console.log("Now what?")
 
