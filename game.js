@@ -132,6 +132,8 @@ function dogInteract() {
       dogInside()
     } else if (answers.dogOpt === "Go Outside") {
       dogOutside()
+    } else if (answers.dogOpt === "Play") {
+      dogPlay()
     }
   })
 }
@@ -171,6 +173,16 @@ function dogOutside() {
   console.log("         |      \\|      ")
   console.log("")
   console.log("Now what?")
+
+  dogInteract()
+}
+
+function dogPlay() {
+  if (dog.bored) {
+    console.log("I love playing outside!")
+  } else {
+    console.log("We're only allowed to play outside!")
+  }
 
   dogInteract()
 }
