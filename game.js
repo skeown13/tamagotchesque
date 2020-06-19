@@ -68,10 +68,10 @@ inquirer.prompt([
         console.log("I'm already inside...")
       }
     }
+    // Would like to add a function later that has an array in it of multiple different play options. So when play is called you get a random different play each time (play with ball, chase butterfly, something else....)
     dog.play = function() {
       if (this.bored) {
         console.log("Yay! Let's play!")
-        // this.bored = false
         this.hungry = true
       } else {
         console.log("Not right now. Later?")
