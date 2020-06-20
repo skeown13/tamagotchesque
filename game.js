@@ -71,8 +71,9 @@ inquirer.prompt([
     // Would like to add a function later that has an array in it of multiple different play options. So when play is called you get a random different play each time (play with ball, chase butterfly, something else....)
     dog.play = function() {
       if (this.bored) {
+        let dogPlayRnd = Math.floor(Math.random() * dogPlayArray.length)
         console.log("Yay! Let's play!")
-        dogButterfly()
+        dogPlayArray[dogPlayRnd]()
       } else {
         console.log("We're not allowed to play inside. We might break something!")
       }
@@ -187,6 +188,8 @@ function dogPlay() {
 
   dogInteract()
 }
+
+let dogPlayArray = [dogBall, dogButterfly]
 
 function dogBall() {
   console.log("Throw the ball! Throw the ball!! I will catch it and bring it back to you!!! And then we can do it again and AGAIN!")
