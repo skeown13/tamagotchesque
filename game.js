@@ -72,6 +72,7 @@ inquirer.prompt([
     dog.play = function() {
       if (this.bored) {
         console.log("Yay! Let's play!")
+        dogBall()
       } else {
         console.log("We're not allowed to play inside. We might break something!")
       }
@@ -185,6 +186,18 @@ function dogPlay() {
   dog.play()
 
   dogInteract()
+}
+
+function dogBall() {
+  console.log("Throw the ball! Throw the ball!! I will catch it and bring it back to you!!! And then we can do it again and AGAIN!")
+  console.log("")
+  console.log("  _._  ")
+  console.log(".'--.`.")
+  console.log("|  .' |")
+  console.log(" `--`'")
+  console.log("")
+  console.log("That was so much fun!")
+
 }
 
 function dogEat() {
