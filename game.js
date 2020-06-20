@@ -21,7 +21,7 @@ function DigitalPal () {
       this.sleepy = false
       this.increaseAge()
     } else {
-      "No way! I'm not tired."
+      console.log("No way! I'm not tired.")
     }
   }
   this.increaseAge = function() {
@@ -51,6 +51,7 @@ inquirer.prompt([
       console.log("Woof! Woof!")
     }
     dog.goOutside = function() {
+      this.sleepy = false
       if (this.outside) {
         console.log("We're already outside though...")
       } else {
