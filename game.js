@@ -194,10 +194,11 @@ let dogPlayArray = [dogBall, dogButterfly]
 function dogBall() {
   console.log("Throw the ball! Throw the ball!! I will catch it and bring it back to you!!! And then we can do it again and AGAIN!")
   console.log("")
-  console.log("  _._  ")
-  console.log(".'--.`.")
-  console.log("|  .' |")
-  console.log(" `--`'")
+  console.log("                          _._  ")
+  console.log("                        .'--.`.")
+  console.log("' '  .                  |  .' |")
+  console.log("       '      . .     .  `--`'")
+  console.log("         `.'       `.'")
   console.log("")
   console.log("That was so much fun!")
 
