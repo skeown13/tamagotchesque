@@ -19,7 +19,6 @@ function DigitalPal () {
     if (this.sleepy) {
       console.log("Zzzzzzzz")
       this.sleepy = false
-      this.bored = true
       this.increaseAge()
     } else {
       "No way! I'm not tired."
@@ -73,7 +72,7 @@ inquirer.prompt([
       if (this.bored) {
         console.log("Yay! Let's play!")
       } else {
-        console.log("Not right now. Later?")
+        console.log("We're not allowed to play inside. We might break something!")
       }
     }
 
