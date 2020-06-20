@@ -145,13 +145,14 @@ function dogInside() {
   dog.hungry = true
   dog.goInside()
 
-  console.log("     ..  ")
-  console.log(" .---''-.")
-  console.log("/________\\")
-  console.log("|   __   |")
-  console.log("|[]|  |[]|")
-  console.log("|  |' |  |")
-  console.log("'--'--'--'")
+  console.log("   .-------------.")
+  console.log("  /_/_/_/_/_/_/_/ \\")
+  console.log(" //_/_/_/_/_/_// _ \\")
+  console.log("/_/_/_/_/_/_/_/|/ \\|\\")
+  console.log(" |             || ||")
+  console.log(" |    Dog      || ||")
+  console.log(" |   House     || ||")
+  console.log(" |_____________||_||")
   console.log("")
   console.log("Now what?")
 
