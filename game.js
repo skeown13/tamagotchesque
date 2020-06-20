@@ -13,8 +13,6 @@ function DigitalPal () {
       console.log("That was yummy!")
       this.hungry = false
       this.sleepy = true
-    } else {
-      console.log("No thanks! I'm full.")
     }
   }
   this.sleep = function() {
@@ -74,7 +72,6 @@ inquirer.prompt([
     dog.play = function() {
       if (this.bored) {
         console.log("Yay! Let's play!")
-        this.hungry = true
       } else {
         console.log("Not right now. Later?")
       }
@@ -194,6 +191,8 @@ function dogEat() {
   if (dog.hungry) {
     console.log('(`"======="`)')
     console.log('(_.=======._)')
+  } else {
+    console.log("It's much too exciting outside to eat!!")
   }
   dog.eat()
 
