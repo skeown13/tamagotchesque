@@ -186,6 +186,10 @@ function dogPlay() {
 }
 
 function dogEat() {
+  if (dog.hungry) {
+    console.log('(`"======="`)')
+    console.log('(_.=======._)')
+  }
   dog.eat()
 
   dogInteract()
