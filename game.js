@@ -136,6 +136,8 @@ function dogInteract() {
       dogPlay()
     } else if (answers.dogOpt === "Eat") {
       dogEat()
+    } else if (answers.dogOpt === "Sleep") {
+      dogSleep()
     }
   })
 }
@@ -192,6 +194,12 @@ function dogEat() {
     console.log('(_.=======._)')
   }
   dog.eat()
+
+  dogInteract()
+}
+
+function dogSleep() {
+  dog.sleep()
 
   dogInteract()
 }
