@@ -1,5 +1,7 @@
 let inquirer = require("inquirer")
 
+// The Original Constructor used as the base for all animals
+
 function DigitalPal () {
   this.hungry = false
   this.sleepy = false
@@ -32,7 +34,7 @@ function DigitalPal () {
 }
 
 
-// Game Logic with Inquirer
+// Choose which ANIMAL you would like to interact with. Then gives that animal's instance of the constructor unique properties and methods.
 
 let dog
 
@@ -118,7 +120,7 @@ inquirer.prompt([
   }
 })
 
-
+// Starts the Functionality for DOG
 function dogInteract() {
   inquirer.prompt([
     {
@@ -203,3 +205,5 @@ function dogSleep() {
 
   dogInteract()
 }
+
+// Starts the Functionality for CAT
