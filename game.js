@@ -114,7 +114,7 @@ inquirer.prompt([
     console.log('(")(")_/ ')
     console.log('')
 
-    // catPet()
+    catInteract()
 
   }
 })
@@ -237,3 +237,6 @@ function dogSleep() {
 }
 
 // Starts the Functionality for CAT
+function catInteract() {
+  
+}
