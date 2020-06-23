@@ -34,6 +34,7 @@ function DigitalPal () {
 // Choose which ANIMAL you would like to interact with. Then gives that animal's instance of the constructor unique properties and methods.
 
 let dog
+let cat
 
 inquirer.prompt([
   {
@@ -89,7 +90,7 @@ inquirer.prompt([
     dogInteract()
 
   } else if (answers.pet === "Cat") {
-    let cat = new DigitalPal()
+    cat = new DigitalPal()
 
     cat.houseCondition = 100
     cat.meow = function() {
