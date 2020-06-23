@@ -249,6 +249,8 @@ function catInteract() {
   ]).then(function(answers) {
     if (answers.catOpt === "Check House Condition") {
       catHouseCondition()
+    } else if (answers.catOpt === "Destroy Furniture") {
+      catDestroyFurniture()
     }
   })
 }
@@ -291,6 +293,22 @@ function catHouseCondition() {
     console.log("'--'--'--' ")
     console.log("")
   }
+
+  catInteract()
+}
+
+function catDestroyFurniture() {
+  console.log("")
+  console.log("             ____")
+  console.log("            /    \\")
+  console.log("           /______\\")
+  console.log("              ||")
+  console.log("              ||")
+  console.log("  /~~~~~~\\    ||")
+  console.log("/~ ( )( ) ~\\  ||")
+  console.log("(_)======(_)  ||")
+  console.log(" |________|  _||_")
+  console.log("")
 
   catInteract()
 }
