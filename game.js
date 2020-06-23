@@ -254,7 +254,18 @@ function catInteract() {
 }
 
 function catHouseCondition() {
-  console.log("The condition of your house is at " + cat.houseCondition + "%")
+  if (parseFloat(cat.houseCondition) >= 80) {
+    console.log("")
+    console.log("The condition of your house is at " + cat.houseCondition + "%")
+    console.log("     ..    ")
+    console.log(" .---''-.  ")
+    console.log("/________\\")
+    console.log("|   __   | ")
+    console.log("|[]|  |[]| ")
+    console.log("|  |' |  | ")
+    console.log("'--'--'--' ")
+    console.log("")
+  }
 
   catInteract()
 }
