@@ -257,6 +257,7 @@ function catHouseCondition() {
   if (parseFloat(cat.houseCondition) >= 80) {
     console.log("")
     console.log("The condition of your house is at " + cat.houseCondition + "%")
+    console.log("You're house is in GREAT condition. Looking good!")
     console.log("     ..    ")
     console.log(" .---''-.  ")
     console.log("/________\\")
@@ -268,6 +269,7 @@ function catHouseCondition() {
   } else if (parseFloat(cat.houseCondition) > 50 && parseFloat(cat.houseCondition) < 80) {
     console.log("")
     console.log("The condition of your house is at " + cat.houseCondition + "%")
+    console.log("Your house is starting to look a bit beat up. Still not bad though!")
     console.log(" ________  ")
     console.log("|   __   | ")
     console.log("|[]|  |[]| ")
@@ -277,6 +279,7 @@ function catHouseCondition() {
   } else if (parseFloat(cat.houseCondition) > 20 && parseFloat(cat.houseCondition) < 50) {
     console.log("")
     console.log("The condition of your house is at " + cat.houseCondition + "%")
+    console.log("You're house is really starting to show its wear and tear. You may want to consider purchasing some new furniture soon!")
     console.log("|[]|  |[]| ")
     console.log("|  |' |  | ")
     console.log("'--'--'--' ")
@@ -284,6 +287,7 @@ function catHouseCondition() {
   } else if (parseFloat(cat.houseCondition) <= 20) {
     console.log("")
     console.log("The condition of your house is at " + cat.houseCondition + "%")
+    console.log("Your house has basically been completely destroyed. You should really spruce it up some by buying new furniture!")
     console.log("'--'--'--' ")
     console.log("")
   }
