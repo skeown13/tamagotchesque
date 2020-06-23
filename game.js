@@ -238,5 +238,12 @@ function dogSleep() {
 
 // Starts the Functionality for CAT
 function catInteract() {
-  
+  inquirer.prompt([
+    {
+      type: "list",
+      name: "catOpt",
+      message: "What would you like to do?",
+      choices: ["Go Inside", "Go Outside", "Play", "Eat", "Sleep"]
+    }
+  ])
 }
