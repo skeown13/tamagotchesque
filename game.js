@@ -245,5 +245,15 @@ function catInteract() {
       message: "What would you like to do?",
       choices: ["Check House Condition", "Destroy Furniture", "Buy New Furniture", "Play", "Eat", "Sleep"]
     }
-  ])
+  ]).then(function(answers) {
+    if (answers.catOpt === "Check House Condition") {
+      catHouseCondition()
+    }
+  })
+}
+
+function catHouseCondition() {
+  console.log("The condition of your house is at " + cat.houseCondition + "%")
+
+  catInteract()
 }
