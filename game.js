@@ -243,7 +243,7 @@ function catInteract() {
       type: "list",
       name: "catOpt",
       message: "What would you like to do?",
-      choices: ["Go Inside", "Go Outside", "Play", "Eat", "Sleep"]
+      choices: ["Check House Condition", "Destroy Furniture", "Buy New Furniture", "Play", "Eat", "Sleep"]
     }
   ])
 }
