@@ -17,7 +17,6 @@ function DigitalPal () {
   }
   this.sleep = function() {
     if (this.sleepy) {
-      console.log("Zzzzzzzz")
       this.sleepy = false
       this.increaseAge()
     } else {
@@ -262,6 +261,8 @@ function catInteract() {
       catPlay()
     } else if (answers.catOpt === "Eat") {
       catEat()
+    } else if (answers.catOpt) {
+      catSleep()
     }
   })
 }
@@ -379,6 +380,29 @@ function catEat() {
     console.log("No thanks; I'm not hungry. Maybe we can play before eating.")
   }
   cat.eat()
+
+  catInteract()
+}
+
+function catSleep() {
+  
+  if (cat.sleepy) {
+    console.log("")
+    console.log("            /\\____/\\    __")
+    console.log("          .'  \"\"\"\"  `,-'  `--.__")
+    console.log("     __,- :   -  -  ;  \" ::     `-. -.__")
+    console.log("  ,-sssss `._  `' _,'\"     ,'~~~::`.sssss-.")
+    console.log(" |ssssss ,' ,_`--'_    __,' ::  `  `.ssssss|")
+    console.log("|sssssss `-._____~ `,,'_______,---_;; ssssss|")
+    console.log(" |ssssssssss     `--'~{__   ____   ,'ssssss|")
+    console.log("  `-ssssssssssssssssss ~~~~~~~~~~~~ ssss.-'")
+    console.log("       `---.sssssssssssssssssssss.---'")
+    console.log("")
+    console.log("What a lovely Cat Nap! I feel refreshed and ready to go!!")
+    console.log("")
+  }
+  
+  cat.sleep()
 
   catInteract()
 }
