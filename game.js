@@ -280,7 +280,7 @@ function catHouseCondition() {
     console.log("|  |' |  | ")
     console.log("'--'--'--' ")
     console.log("")
-  } else if (cat.houseCondition > 20 && cat.houseCondition < 50) {
+  } else if (cat.houseCondition > 20 && cat.houseCondition <= 50) {
     console.log("")
     console.log("The condition of your house is at " + cat.houseCondition + "%")
     console.log("You're house is really starting to show its wear and tear. You may want to consider purchasing some new furniture soon!")
