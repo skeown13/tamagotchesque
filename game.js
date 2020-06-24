@@ -108,6 +108,7 @@ inquirer.prompt([
     }
 
     cat.play = function() {
+      cat.hungry = true
       let catPlayRnd = Math.floor(Math.random() * catPlayArray.length)
       cat.meow()
       catPlayArray[catPlayRnd]()
@@ -259,6 +260,8 @@ function catInteract() {
       catBuyNewFurniture()
     } else if (answers.catOpt === "Play") {
       catPlay()
+    } else if (answers.catOpt === "Eat") {
+      catEat()
     }
   })
 }
@@ -365,4 +368,17 @@ function catHunt() {
   console.log("          `-    \\`_`\"'-     (__)(\")")
   console.log("                          -' \"\"  '")
   console.log("")
+}
+
+function catEat() {
+  if (cat.hungry) {
+    console.log('( ( (')
+    console.log(' ) ) )')
+    console.log('>++++°>')
+  } else {
+    console.log("No thanks; I'm not hungry. Maybe we can play before eating.")
+  }
+  cat.eat()
+
+  catInteract()
 }
