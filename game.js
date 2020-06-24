@@ -335,4 +335,23 @@ function catPlay() {
   catInteract()
 }
 
-let catPlayArray = []
+let catPlayArray = [catBox]
+
+function catBox() {
+  console.log("")
+  console.log("Ooooo LOOK!!! A box!")
+  console.log("                         ,")
+  console.log("  ,-.       _,---._ __  / \\")
+  console.log(" /  )    .-'       `./ /   \\")
+  console.log("(  (   ,'            `/    /|")
+  console.log(" \\  `-\"             \\'\\   / |")
+  console.log("  `.              ,  \\ \\ /  |")
+  console.log("   /`.          ,'-`----Y   |")
+  console.log("  (            ;        |   '")
+  console.log("  |  ,-.    ,-'         |  /")
+  console.log("  |  | (   |        hjw | /")
+  console.log("  )  |  \  `.___________|/")
+  console.log("  `--'   `--'")
+  console.log("")
+
+}
