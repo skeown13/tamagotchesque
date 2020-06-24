@@ -107,6 +107,12 @@ inquirer.prompt([
       console.log("The condition of your house is now at " + cat.houseCondition + "%")
     }
 
+    cat.play = function() {
+      let catPlayRnd = Math.floor(Math.random() * catPlayArray.length)
+      cat.meow()
+      catPlayArray[catPlayRnd]()
+    }
+
     console.log("You choose a Cat!")
     console.log(' /\\_/\\ ')
     console.log('(=^.^=)')
@@ -251,6 +257,8 @@ function catInteract() {
       catDestroyFurniture()
     } else if (answers.catOpt === "Buy New Furniture") {
       catBuyNewFurniture()
+    } else if (answers.catOpt === "Play") {
+      catPlay()
     }
   })
 }
@@ -320,3 +328,11 @@ function catBuyNewFurniture() {
 
   catInteract()
 }
+
+function catPlay() {
+  cat.play()
+
+  catInteract()
+}
+
+let catPlayArray = []
