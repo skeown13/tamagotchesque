@@ -105,8 +105,8 @@ inquirer.prompt([
       }
     }
     cat.buyNewFurniture = function() {
-      this.houseCondition += 50
-      console.log("Are you sure about that?")
+      this.houseCondition += 30
+      console.log("The condition of your house is now at " + cat.houseCondition + "%")
     }
 
     console.log("You choose a Cat!")
@@ -251,6 +251,8 @@ function catInteract() {
       catHouseCondition()
     } else if (answers.catOpt === "Destroy Furniture") {
       catDestroyFurniture()
+    } else if (answers.catOpt === "Buy New Furniture") {
+      catBuyNewFurniture()
     }
   })
 }
@@ -311,6 +313,12 @@ function catDestroyFurniture() {
   console.log("")
 
   cat.destroyFurniture()
+
+  catInteract()
+}
+
+function catBuyNewFurniture() {
+  cat.buyNewFurniture()
 
   catInteract()
 }
