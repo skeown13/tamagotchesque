@@ -328,7 +328,11 @@ function catDestroyFurniture() {
 }
 
 function catBuyNewFurniture() {
-  cat.buyNewFurniture()
+  if (cat.houseCondition <= 70) {
+    cat.buyNewFurniture()
+  } else {
+    console.log("Your house is already perfect! No need to do that at this time.")
+  }
 
   catInteract()
 }
