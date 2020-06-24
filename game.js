@@ -335,7 +335,7 @@ function catPlay() {
   catInteract()
 }
 
-let catPlayArray = [catBox]
+let catPlayArray = [catBox, catHunt]
 
 function catBox() {
   console.log("")
@@ -349,9 +349,20 @@ function catBox() {
   console.log("   /`.          ,'-`----Y   |")
   console.log("  (            ;        |   '")
   console.log("  |  ,-.    ,-'         |  /")
-  console.log("  |  | (   |        hjw | /")
-  console.log("  )  |  \  `.___________|/")
+  console.log("  |  | (   |            | /")
+  console.log("  )  |  \\  `.___________|/")
   console.log("  `--'   `--'")
   console.log("")
 
+}
+
+function catHunt() {
+  console.log("")
+  console.log("On the prowl! Gonna hunt me a mouse!")
+  console.log(" _._     _,-'\"\"`-._")
+  console.log("(,-.`._,'(       |\\`-/|")
+  console.log("    `-.-' \\ )-`( , o o)      __()()")
+  console.log("          `-    \\`_`\"'-     (__)(\")")
+  console.log("                          -' \"\"  '")
+  console.log("")
 }
