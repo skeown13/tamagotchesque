@@ -100,8 +100,6 @@ inquirer.prompt([
       if (this.houseCondition > 0) {
         this.houseCondition -= 10
         console.log("MUAHAHAHAHA! TAKE THAT FURNITURE!")
-        this.bored = false
-        this.sleepy = true
       }
     }
     cat.buyNewFurniture = function() {
