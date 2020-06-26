@@ -194,7 +194,7 @@ function dogPlay() {
   dogInteract()
 }
 
-let dogPlayArray = [dogBall, dogButterfly]
+let dogPlayArray = [dogBall, dogButterfly, dogRun]
 
 function dogBall() {
   console.log("Throw the ball! Throw the ball!! I will catch it and bring it back to you!!! And then we can do it again and AGAIN!")
@@ -221,6 +221,19 @@ function dogButterfly() {
   console.log("            {_/ \\_}")
   console.log("")
 
+}
+
+function dogRun() {
+  console.log("I wanna run!!! I betcha I can run faster that you!")
+  console.log("")
+  console.log("             .--~~,__")
+  console.log(":-....,-------`~~'._.'")
+  console.log(" `-,,,  ,_      ;'~U'")
+  console.log("  _,-' ,'`-__; '--.")
+  console.log(" (_/'~~      ''''(;")
+  console.log("")
+  console.log("Told ya so!")
+  console.log("")
 }
 
 function dogEat() {
