@@ -169,6 +169,7 @@ function dogInside() {
 
 function dogOutside() {
   dog.bored = true
+  dog.hungry = false
   dog.goOutside()
 
   console.log("  \\_/ ")
