@@ -466,3 +466,15 @@ function catSleep() {
 
   catInteract()
 }
+
+// Starts the Functionality for OWL
+function owlInteract() {
+  inquirer.prompt([
+    {
+      type: "list",
+      name: "owlOpt",
+      message: "What would you like to do?",
+      choices: ["Fly", "Hunt", "Eat", "Sleep"]
+    }
+  ])
+}
