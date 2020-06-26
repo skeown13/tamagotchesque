@@ -241,8 +241,10 @@ function dogEat() {
   if (dog.hungry) {
     console.log('(`"======="`)')
     console.log('(_.=======._)')
-  } else {
+  } else if (!dog.hungry && dog.outside) {
     console.log("It's much too exciting outside to eat!!")
+  } else if (!dog.hungry && dog.goInside) {
+    console.log("I'm not hungry. We haven't even played yet!")
   }
   dog.eat()
 
