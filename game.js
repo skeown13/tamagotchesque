@@ -34,13 +34,14 @@ function DigitalPal () {
 
 let dog
 let cat
+let owl
 
 inquirer.prompt([
   {
     type: "list",
     name: "pet",
     message: "Would you like a Dog Digital Pet or a Cat Digital Pet?",
-    choices: ["Dog", "Cat"]
+    choices: ["Dog", "Cat", "Owl"]
   }
 ]).then(function(answers) {
   if (answers.pet === "Dog") {
@@ -120,6 +121,24 @@ inquirer.prompt([
     console.log('')
 
     catInteract()
+
+  } else if (answers.pet === "Owl") {
+    owl = new DigitalPal()
+
+    owl.fly = function() {
+
+    }
+    owl.hunt = function() {
+
+    }
+
+    console.log("You choose an Owl!")
+    console.log(",___,")
+    console.log("(O,O)")
+    console.log("/)_)")
+    console.log(' "" ')
+
+    owlInteract()
 
   }
 })
