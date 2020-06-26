@@ -355,6 +355,17 @@ function catDestroyFurniture() {
 
 function catBuyNewFurniture() {
   if (cat.houseCondition <= 70) {
+    console.log("")
+    console.log("  ____")
+    console.log(" /    \\")
+    console.log("/______\\")
+    console.log("   ||")
+    console.log("   ||")
+    console.log("   ||    /~~~~~~~~~~~~~~~\\")
+    console.log("   ||  /~ ( )( )( )( )( ) ~\\")
+    console.log("   ||  (_)===============(_)")
+    console.log("  _||_  |_________________|")
+    console.log("")
     cat.buyNewFurniture()
   } else {
     console.log("Your house is already perfect! No need to do that at this time.")
