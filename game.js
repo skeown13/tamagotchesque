@@ -126,7 +126,7 @@ inquirer.prompt([
     owl = new DigitalPal()
 
     owl.fly = function() {
-
+      console.log("There's nothing better than soaring through the open skies!")
     }
     owl.hunt = function() {
 
@@ -378,8 +378,8 @@ function catBuyNewFurniture() {
     console.log("  ____")
     console.log(" /    \\")
     console.log("/______\\")
-    console.log("   ||")
-    console.log("   ||")
+    console.log("   ||     ")
+    console.log("   ||     ")
     console.log("   ||    /~~~~~~~~~~~~~~~\\")
     console.log("   ||  /~ ( )( )( )( )( ) ~\\")
     console.log("   ||  (_)===============(_)")
@@ -476,5 +476,29 @@ function owlInteract() {
       message: "What would you like to do?",
       choices: ["Fly", "Hunt", "Eat", "Sleep"]
     }
-  ])
+  ]).then(function(answers) {
+    if (answers.owlOpt === "Fly") {
+      owlFly()
+    }
+  })
+}
+
+function owlFly() {
+  console.log("")
+  console.log("__________-------____                 ____-------__________")
+  console.log("\\------____-------___--__---------__--___-------____------/")
+  console.log(" \\//////// / / / / / \\   _-------_   / \\ \\ \\ \\ \\ \\\\\\\\\\\\\\\\/")
+  console.log("   \\////-/-/------/_/_| /___   ___\\ |_\\_\\------\\-\\-\\\\\\\\/")
+  console.log("     --//// / /  /  //|| (O)\\ /(O) ||\\\\  \\  \\ \\ \\\\\\\\--")
+  console.log("          ---__/  // /| \\_  /V\\  _/ |\\ \\\\  \\__---")
+  console.log("               -//  / /\\_ ------- _/\\ \\  \\\\-")
+  console.log("                 \\_/_/ /\\---------/\\ \\_\\_/")
+  console.log("                     ----\\   |   /----")
+  console.log("                          | -|- |")
+  console.log("                         /   |   \\")
+  console.log("                         ---- \\___|")
+
+  owl.fly()
+
+  owlInteract()
 }
