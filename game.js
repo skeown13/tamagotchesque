@@ -236,6 +236,16 @@ function dogEat() {
 }
 
 function dogSleep() {
+  if (dog.sleepy) {
+    console.log("")
+    console.log("                __")
+    console.log("               /\\/'-,")
+    console.log("       ,--'''''   /\"")
+    console.log(" ____,'.  )       \\___")
+    console.log("'\"\"\"\"\"------'\"\"\"`-----'")
+    console.log("")
+  }
+  
   dog.sleep()
 
   dogInteract()
