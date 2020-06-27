@@ -146,6 +146,7 @@ inquirer.prompt([
 
     bunny.play = function() {
       if (this.bored) {
+        bunny.hungry = true
         let bunnyPlayRnd = Math.floor(Math.random() * bunnyPlayArray.length)
         console.log("Yay! Let's play!")
         bunnyPlayArray[bunnyPlayRnd]()
@@ -581,6 +582,8 @@ function bunnyInteract() {
   ]).then(function(answers) {
     if (answers.bunnyOpt === "Play"){
       bunnyPlay()
+    } else if (answers.bunnyOpt === "Eat") {
+      bunnyEat()
     }
   })
 }
@@ -634,4 +637,21 @@ function bunnySwim() {
   console.log("                     \\/")
   console.log("Well hello there fishy! Swim here often?")
   console.log("")
+}
+
+function bunnyEat() {
+  if (bunny.hungry) {
+    console.log("")
+    console.log("         ___")
+    console.log(" `-._\\ /     `~~\"--.,_")
+    console.log("------>|              `~~\"--.,_")
+    console.log(" _.-'/ '.____,,,,----\"\"\"~~```'")
+    console.log("")
+  } else {
+    console.log("We can't eat yet... We haven't even played!")
+  }
+
+  bunny.eat()
+
+  bunnyInteract()
 }
