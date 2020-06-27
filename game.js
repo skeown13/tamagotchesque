@@ -767,3 +767,23 @@ function elephantCircus() {
   console.log("Look at me! Look at me!! I'm like one of those Circus Elephants!")
   console.log("")
 }
+
+function elephantEat() {
+  if (elephant.hungry) {
+    console.log("")
+    console.log(" ,+.")
+    console.log("((|))        ,+.")
+    console.log(" )|(   ,+.  ((|))")
+    console.log("((|)) ((|))  )|(")
+    console.log(" `-'   )|(  ((|))")
+    console.log("      ((|))  `-'")
+    console.log("       `-'  ")
+    console.log("")
+  } else {
+    console.log("We can't eat yet... We haven't even played!")
+  }
+
+  elephant.eat()
+
+  elephantInteract()
+}
