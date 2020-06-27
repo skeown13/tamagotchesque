@@ -578,5 +578,17 @@ function bunnyInteract() {
       message: "What would you like to do?",
       choices: ["Play", "Eat", "Sleep"]
     }
-  ])
+  ]).then(function(answers) {
+    if (answers.bunnyOpt === "Play"){
+      bunnyPlay()
+    }
+  })
 }
+
+function bunnyPlay() {
+  bunny.play()
+
+  bunnyInteract()
+}
+
+let bunnyPlayArray = []
