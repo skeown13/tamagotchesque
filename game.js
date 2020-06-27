@@ -591,7 +591,7 @@ function bunnyPlay() {
   bunnyInteract()
 }
 
-let bunnyPlayArray = [bunnyMeet, bunnyHop]
+let bunnyPlayArray = [bunnyMeet, bunnyHop, bunnySwim]
 
 function bunnyMeet() {
   console.log("")
@@ -613,5 +613,25 @@ function bunnyHop() {
   console.log("\\    / @\\___(__--'")
   console.log(" \\  /")
   console.log("Hop Hop Hippity Hop!")
+  console.log("")
+}
+
+function bunnySwim() {
+  console.log("")
+  console.log("               _     _    O  .")
+  console.log("              /_\\   /_\\")
+  console.log("              \\\\\\\\  \\\\\\\\   .  O")
+  console.log("              ////  ////   o")
+  console.log("    o         \\\\\\\\_////  .")
+  console.log("   .           \\ ___ /  o   O")
+  console.log("  __  o         [o_o]   . o")
+  console.log("\\/ o\\        ___/ ^ \\___ ")
+  console.log("/\\__/           \\___/")
+  console.log("                _/ \\_")
+  console.log("             __//   \\\\")
+  console.log("            /___\\/_\\/|")
+  console.log("                    \\ \\")
+  console.log("                     \\/")
+  console.log("Well hello there fishy! Swim here often?")
   console.log("")
 }
