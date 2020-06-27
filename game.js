@@ -704,3 +704,27 @@ function bunnySleep() {
 
   bunnyInteract()
 }
+
+// Starts the Functionality for ELEPHANT
+function elephantInteract() {
+  inquirer.prompt([
+    {
+      type: "list",
+      name: "elephantOpt",
+      message: "What would you like to do?",
+      choices: ["Play", "Eat", "Sleep"]
+    }
+  ]).then(function(answers) {
+    if (answers.elephantOpt === "Play") {
+      elephantPlay()
+    }
+  })
+}
+
+function elephantPlay() {
+  elephant.play()
+
+  elephantInteract()
+}
+
+let elephantPlayArray = []
