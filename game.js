@@ -479,6 +479,8 @@ function owlInteract() {
   ]).then(function(answers) {
     if (answers.owlOpt === "Fly") {
       owlFly()
+    } else if (answers.owlOpt === "Eat") {
+      owlEat()
     }
   })
 }
@@ -499,6 +501,20 @@ function owlFly() {
   console.log("                         ---- \\___|")
 
   owl.fly()
+
+  owlInteract()
+}
+
+function owlEat() {
+  if (owl.hungry) {
+    console.log("")
+    console.log("()(),~~,.")
+    console.log(" xx ___; )")
+    console.log("=`=     (_.")
+    console.log("")
+  } else {
+    console.log("There's no such thing as a free meal! We must hunt our food if we want to eat...")
+  }
 
   owlInteract()
 }
