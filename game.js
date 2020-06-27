@@ -35,13 +35,14 @@ function DigitalPal () {
 let dog
 let cat
 let owl
+let bunny
 
 inquirer.prompt([
   {
     type: "list",
     name: "pet",
     message: "Would you like a Dog Digital Pet or a Cat Digital Pet?",
-    choices: ["Dog", "Cat", "Owl"]
+    choices: ["Dog", "Cat", "Owl", "Bunny"]
   }
 ]).then(function(answers) {
   if (answers.pet === "Dog") {
@@ -139,6 +140,27 @@ inquirer.prompt([
     console.log(' "" ')
 
     owlInteract()
+
+  } else if (answers.pet === "Bunny") {
+    bunny = new DigitalPal()
+
+    bunny.play = function() {
+      if (this.bored) {
+        let bunnyPlayRnd = Math.floor(Math.random() * bunnyPlayArray.length)
+        console.log("Yay! Let's play!")
+        bunnyPlayArray[bunnyPlayRnd]()
+      } else {
+        console.log("no")
+      }
+    }
+
+    console.log("You choose a Bunny!")
+    console.log('  (\\_/)')
+    console.log(' =(^.^)=')
+    console.log(' (")_(")')
+    console.log('')
+
+    bunnyInteract()
 
   }
 })
