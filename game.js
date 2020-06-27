@@ -481,6 +481,8 @@ function owlInteract() {
       owlFly()
     } else if (answers.owlOpt === "Eat") {
       owlEat()
+    } else if (answers.owlOpt === "Sleep") {
+      owlSleep()
     }
   })
 }
@@ -515,6 +517,31 @@ function owlEat() {
   } else {
     console.log("There's no such thing as a free meal! We must hunt our food if we want to eat...")
   }
+
+  owlInteract()
+}
+
+function owlSleep() {
+  if (owl.sleepy) {
+    console.log("")
+    console.log("   ...    *    .   _  .")
+    console.log("*  .  *     .   * (_)   *")
+    console.log("  .      |*  ..   *   ..")
+    console.log("   .  * \\|  *  ___  . . *")
+    console.log("*   \\/   |/ \\/{o,o}     .")
+    console.log("  _\\_\\   |  / /)  )* _/_ *")
+    console.log("      \\ \\| /,--\"-\"---  ..")
+    console.log("_-----`  |(,__,__/__/_ .")
+    console.log("       \\ ||      ..")
+    console.log("        ||| .            *")
+    console.log("        |||")
+    console.log("        |||")
+    console.log("  , -=-~' .-^- _")
+    console.log("           `")
+    console.log("")
+  } 
+
+  owl.sleep()
 
   owlInteract()
 }
