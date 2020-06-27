@@ -584,6 +584,8 @@ function bunnyInteract() {
       bunnyPlay()
     } else if (answers.bunnyOpt === "Eat") {
       bunnyEat()
+    } else if (answers.bunnyOpt === "Sleep") {
+      bunnySleep()
     }
   })
 }
@@ -652,6 +654,27 @@ function bunnyEat() {
   }
 
   bunny.eat()
+
+  bunnyInteract()
+}
+
+function bunnySleep() {
+  if (bunny.sleepy) {
+    console.log("")
+    console.log("z      ___     ___")
+    console.log("    z /   \\   /   \\")
+    console.log("     /   / \\_/ \\   \\")
+    console.log("   Z \\__/\\     /\\__/")
+    console.log("          \\- -/")
+    console.log("     z ___/ ^ \\___")
+    console.log("          \\___/")
+    console.log("          _/ \\_")
+    console.log("       __//   \\\\__")
+    console.log("      /___\\/_\\/___\\")
+    console.log("")
+  }
+
+  bunny.sleep()
 
   bunnyInteract()
 }
