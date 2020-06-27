@@ -727,4 +727,14 @@ function elephantPlay() {
   elephantInteract()
 }
 
-let elephantPlayArray = []
+let elephantPlayArray = [elephantTrain]
+
+function elephantTrain() {
+  console.log("")
+  console.log("                       _       __,\"\\\\  _.")
+  console.log("    /\\\\     /\\\\   _.--/ `.   ,' (   \"_//\"")
+  console.log(" ,''\\,\"  ,\"\"\\,\"=='(   \\.'\\\\_,(  _`-'=-'")
+  console.log("' u-u `=' u-u     |l''|l  `\" |m' |m")
+  console.log("Choo Choo!! Here comes the Elephant Train! Choo Choo!!")
+  console.log("")
+}
