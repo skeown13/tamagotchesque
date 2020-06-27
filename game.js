@@ -567,3 +567,16 @@ function owlSleep() {
 
   owlInteract()
 }
+
+
+// Starts the Functionality for BUNNY
+function bunnyInteract() {
+  inquirer.prompt([
+    {
+      type: "list",
+      name: "bunnyOpt",
+      message: "What would you like to do?",
+      choices: ["Play", "Eat", "Sleep"]
+    }
+  ])
+}
