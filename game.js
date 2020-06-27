@@ -591,4 +591,16 @@ function bunnyPlay() {
   bunnyInteract()
 }
 
-let bunnyPlayArray = []
+let bunnyPlayArray = [bunnyMeet]
+
+function bunnyMeet() {
+  console.log("")
+  console.log("    \\(,%%*%,_                      -%*%%,)/")
+  console.log("  %%/*(                       /)   /)   )*\\%%")
+  console.log(" %% )\\|                      (/   (/    |/( %%")
+  console.log("  _/ #)                    __/') ('\\__  (# \\_")
+  console.log(" .) ,/                   _/  /     \\  \\_ \\, (.")
+  console.log(" /)#(_,,,,,,,,,,,,,,,,,,,\\,((,,,,,,,)),/,_)#(\\")
+  console.log("Oh hi there other bunny! We should play together.")
+  console.log("")
+}
