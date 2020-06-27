@@ -717,6 +717,8 @@ function elephantInteract() {
   ]).then(function(answers) {
     if (answers.elephantOpt === "Play") {
       elephantPlay()
+    } else if (answers.elephantOpt === "Eat") {
+      elephantEat()
     }
   })
 }
@@ -727,7 +729,7 @@ function elephantPlay() {
   elephantInteract()
 }
 
-let elephantPlayArray = [elephantTrain, elephantTrumpet]
+let elephantPlayArray = [elephantTrain, elephantTrumpet, elephantCircus]
 
 function elephantTrain() {
   console.log("")
@@ -747,5 +749,21 @@ function elephantTrumpet() {
   console.log("(  \\ |__| |'")
   console.log("   |_|  |_|")
   console.log("Toot Toot!! My trunk makes a noise like a trumpet! Toot Toot!!")
+  console.log("")
+}
+
+function elephantCircus() {
+  console.log("")
+  console.log("           .-~~-. .--.")
+  console.log("          /      /   \"\\")
+  console.log("         /    \\ |  \\   \\")
+  console.log("        |/\\    | \\_/-'\\ \\")
+  console.log("        A |   /  ||   /_/")
+  console.log("          |__||__||")
+  console.log("         /~~~~~~~~~~\\")
+  console.log("        /\\_/\\_/\\_/\\_/\\")
+  console.log("       /\\/ \\/ \\/ \\/ \\/\\")
+  console.log("    __/________________\\__")
+  console.log("Look at me! Look at me!! I'm like one of those Circus Elephants!")
   console.log("")
 }
