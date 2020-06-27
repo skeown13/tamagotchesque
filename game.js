@@ -719,6 +719,8 @@ function elephantInteract() {
       elephantPlay()
     } else if (answers.elephantOpt === "Eat") {
       elephantEat()
+    } else if (answers.elephantOpt === "Sleep") {
+      elephantSleep()
     }
   })
 }
@@ -784,6 +786,22 @@ function elephantEat() {
   }
 
   elephant.eat()
+
+  elephantInteract()
+}
+
+function elephantSleep() {
+  if (elephant.sleepy) {
+    console.log("")
+    console.log(" z      ____")
+    console.log("    z  /_   \\__")
+    console.log("  z   /_  \\_/  \\")
+    console.log("   z // \\  ___ |\\")
+    console.log("         |_| |_|")
+    console.log("")
+  }
+
+  elephant.sleep()
 
   elephantInteract()
 }
