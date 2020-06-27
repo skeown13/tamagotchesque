@@ -727,7 +727,7 @@ function elephantPlay() {
   elephantInteract()
 }
 
-let elephantPlayArray = [elephantTrain]
+let elephantPlayArray = [elephantTrain, elephantTrumpet]
 
 function elephantTrain() {
   console.log("")
@@ -736,5 +736,16 @@ function elephantTrain() {
   console.log(" ,''\\,\"  ,\"\"\\,\"=='(   \\.'\\\\_,(  _`-'=-'")
   console.log("' u-u `=' u-u     |l''|l  `\" |m' |m")
   console.log("Choo Choo!! Here comes the Elephant Train! Choo Choo!!")
+  console.log("")
+}
+
+function elephantTrumpet() {
+  console.log("")
+  console.log("        .--._   _,-';")
+  console.log("   ,---(    .`-',-'")
+  console.log(" /(     `--'_,'")
+  console.log("(  \\ |__| |'")
+  console.log("   |_|  |_|")
+  console.log("Toot Toot!! My trunk makes a noise like a trumpet! Toot Toot!!")
   console.log("")
 }
