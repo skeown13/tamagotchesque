@@ -6,7 +6,7 @@ function DigitalPal () {
   this.hungry = false
   this.sleepy = false
   this.bored = true
-  this.age = 0
+  this.day = 0
 
   this.eat = function() {
     if (this.hungry) {
@@ -18,14 +18,15 @@ function DigitalPal () {
   this.sleep = function() {
     if (this.sleepy) {
       this.sleepy = false
-      this.increaseAge()
+      this.increaseDay()
     } else {
       console.log("No way! I'm not tired.")
     }
   }
-  this.increaseAge = function() {
-    this.age += 1
-    console.log("Happy Birthday to me! I am " + this.age + " old!")
+  this.increaseDay = function() {
+    this.day += 1
+    console.log("A new day! We've been playing for " + this.day + "days!")
+    console.log("What are we going to do today?")
   }
 }
 
