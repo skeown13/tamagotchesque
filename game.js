@@ -25,7 +25,11 @@ function DigitalPal () {
   }
   this.increaseDay = function() {
     this.day += 1
-    console.log("A new day! We've been playing for " + this.day + "days!")
+    if (this.day === 1) {
+      console.log("A new day! We've been playing for " + this.day + " day!")
+    } else if (this.day > 1) {
+      console.log("A new day! We've been playing for " + this.day + " days!")
+    }
     console.log("What are we going to do today?")
   }
 }
