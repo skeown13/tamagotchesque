@@ -23,6 +23,13 @@ function DigitalPal () {
       console.log("No way! I'm not tired.")
     }
   }
+  this.play = function(animalPlayArray) {
+    if (this.bored) {
+      let animalPlayRnd = Math.floor(Math.random() * animalPlayArray.length)
+      console.log("Yay! Let's play!")
+      animalPlayArray[animalPlayRnd]()
+    }
+  }
   this.increaseDay = function() {
     this.day += 1
     if (this.day === 1) {
@@ -76,16 +83,6 @@ inquirer.prompt([
         console.log("I'm already inside...")
       }
     }
-    // Would like to add a function later that has an array in it of multiple different play options. So when play is called you get a random different play each time (play with ball, chase butterfly, something else....)
-    dog.play = function() {
-      if (this.bored) {
-        let dogPlayRnd = Math.floor(Math.random() * dogPlayArray.length)
-        console.log("Yay! Let's play!")
-        dogPlayArray[dogPlayRnd]()
-      } else {
-        console.log("We're not allowed to play inside. We might break something!")
-      }
-    }
 
     console.log("You choose a Dog!")
     console.log('  _____  ')
@@ -112,13 +109,6 @@ inquirer.prompt([
     cat.buyNewFurniture = function() {
       this.houseCondition += 30
       console.log("The condition of your house is now at " + cat.houseCondition + "%")
-    }
-
-    cat.play = function() {
-      cat.hungry = true
-      let catPlayRnd = Math.floor(Math.random() * catPlayArray.length)
-      cat.meow()
-      catPlayArray[catPlayRnd]()
     }
 
     console.log("You choose a Cat!")
@@ -150,17 +140,6 @@ inquirer.prompt([
   } else if (answers.pet === "Bunny") {
     bunny = new DigitalPal()
 
-    bunny.play = function() {
-      if (this.bored) {
-        bunny.hungry = true
-        let bunnyPlayRnd = Math.floor(Math.random() * bunnyPlayArray.length)
-        console.log("Yay! Let's play!")
-        bunnyPlayArray[bunnyPlayRnd]()
-      } else {
-        console.log("no")
-      }
-    }
-
     console.log("You choose a Bunny!")
     console.log('  (\\_/)')
     console.log(' =(^.^)=')
@@ -171,17 +150,6 @@ inquirer.prompt([
 
   } else if (answers.pet === "Elephant") {
     elephant = new DigitalPal()
-
-    elephant.play = function() {
-      if (this.bored) {
-        elephant.hungry = true
-        let elephantPlayRnd = Math.floor(Math.random() * elephantPlayArray.length)
-        console.log("Yay! Let's play!")
-        elephantPlayArray[elephantPlayRnd]()
-      } else {
-        console.log("no")
-      }
-    }
 
     console.log("You choose an Elephant!")
     console.log('  _    _')
@@ -263,7 +231,13 @@ function dogOutside() {
 }
 
 function dogPlay() {
-  dog.play()
+  if (dog.bored) {
+    dog.bark()
+  } else {
+    console.log("We're not allowed to play inside. We might break something!")
+  }
+
+  dog.play(dogPlayArray)
 
   dogInteract()
 }
@@ -448,7 +422,10 @@ function catBuyNewFurniture() {
 }
 
 function catPlay() {
-  cat.play()
+  cat.hungry = true
+  cat.meow()
+
+  cat.play(catPlayArray)
 
   catInteract()
 }
@@ -622,7 +599,13 @@ function bunnyInteract() {
 }
 
 function bunnyPlay() {
-  bunny.play()
+  if (bunny.bored) {
+    bunny.hungry = true
+  } else {
+    console.log("no")
+  }
+
+  bunny.play(bunnyPlayArray)
 
   bunnyInteract()
 }
@@ -731,7 +714,13 @@ function elephantInteract() {
 }
 
 function elephantPlay() {
-  elephant.play()
+  if (elephant.bored) {
+    elephant.hungry = true
+  } else {
+    console.log("no")
+  }
+
+  elephant.play(elephantPlayArray)
 
   elephantInteract()
 }
