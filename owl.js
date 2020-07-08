@@ -5,7 +5,7 @@ function owlInteract() {
       type: "list",
       name: "owlOpt",
       message: "What would you like to do?",
-      choices: ["Fly", "Hunt", "Eat", "Sleep"]
+      choices: ["Fly", "Hunt", "Eat", "Sleep", "Done?"]
     }
   ]).then(function(answers) {
     if (answers.owlOpt === "Fly") {

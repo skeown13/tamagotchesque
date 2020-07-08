@@ -5,7 +5,7 @@ function elephantInteract() {
       type: "list",
       name: "elephantOpt",
       message: "What would you like to do?",
-      choices: ["Play", "Eat", "Sleep"]
+      choices: ["Play", "Eat", "Sleep", "Done?"]
     }
   ]).then(function(answers) {
     if (answers.elephantOpt === "Play") {

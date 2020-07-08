@@ -5,7 +5,7 @@ function bunnyInteract() {
       type: "list",
       name: "bunnyOpt",
       message: "What would you like to do?",
-      choices: ["Play", "Eat", "Sleep"]
+      choices: ["Play", "Eat", "Sleep", "Done?"]
     }
   ]).then(function(answers) {
     if (answers.bunnyOpt === "Play"){
