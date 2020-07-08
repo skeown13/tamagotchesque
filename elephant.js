@@ -115,5 +115,11 @@ function elephantDone() {
       message: "Are you done playing with the elephant?",
       choices: ["NO!! I made a mistake. I still want to play with the elephant!", "Yes I am done playing with the elephant. BUT I would like to play with another DigitalPal.", "Yes, I'm done playing with all DigitalPals."]
     }
-  ])
+  ]).then(function(answers) {
+    if (answers.elephantDone === "NO!! I made a mistake. I still want to play with the elephant!") {
+      elephantInteract()
+    } else if (answers.elephantDone === "Yes I am done playing with the elephant. BUT I would like to play with another DigitalPal.") {
+      initial()
+    }
+  })
 }
