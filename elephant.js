@@ -14,6 +14,8 @@ function elephantInteract() {
       elephantEat()
     } else if (answers.elephantOpt === "Sleep") {
       elephantSleep()
+    } else if (answers.elephantOpt === "Done?") {
+      elephantDone()
     }
   })
 }
@@ -103,4 +105,15 @@ function elephantSleep() {
   elephant.sleep()
 
   elephantInteract()
+}
+
+function elephantDone() {
+  inquirer.prompt([
+    {
+      type: "list",
+      name: "elephantDone",
+      message: "Are you done playing with the elephant?",
+      choices: ["NO!! I made a mistake. I still want to play with the elephant!", "Yes I am done playing with the elephant. BUT I would like to play with another DigitalPal.", "Yes, I'm done playing with all DigitalPals."]
+    }
+  ])
 }
