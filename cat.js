@@ -188,9 +188,15 @@ function catDone() {
   inquirer.prompt([
     {
       type: "list",
-      name: "dogDone",
-      message: "Are you done playing with the Dog?",
-      choices: ["NO!! I made a mistake. I still want to play with the puppy!", "Yes I am done playing with the dog. BUT I would like to play with another DigitalPal.", "Yes, I'm done playing with all DigitalPals."]
+      name: "catDone",
+      message: "Are you done playing with the cat?",
+      choices: ["NO!! I made a mistake. I still want to play with the kitty!", "Yes I am done playing with the cat. BUT I would like to play with another DigitalPal.", "Yes, I'm done playing with all DigitalPals."]
     }
-  ])
+  ]).then(function(answers) {
+    if (answers.dogDone === "NO!! I made a mistake. I still want to play with the kitty!") {
+      catInteract()
+    } else if (answers.dogDone === "Yes I am done playing with the cat. BUT I would like to play with another DigitalPal.") {
+      initial()
+    }
+  })
 }
