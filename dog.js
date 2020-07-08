@@ -161,7 +161,6 @@ function dogDone() {
     if (answers.dogDone === "NO!! I made a mistake. I still want to play with the puppy!") {
       dogInteract()
     } else if (answers.dogDone === "Yes I am done playing with the dog. BUT I would like to play with another DigitalPal.") {
-      console.log("i entered!")
       initial()
     }
   })
