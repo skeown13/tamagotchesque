@@ -20,6 +20,8 @@ function catInteract() {
       catEat()
     } else if (answers.catOpt) {
       catSleep()
+    } else if (answers.dogOpt === "Done?") {
+      catDone()
     }
   })
 }
@@ -180,4 +182,15 @@ function catSleep() {
   cat.sleep()
 
   catInteract()
+}
+
+function catDone() {
+  inquirer.prompt([
+    {
+      type: "list",
+      name: "dogDone",
+      message: "Are you done playing with the Dog?",
+      choices: ["NO!! I made a mistake. I still want to play with the puppy!", "Yes I am done playing with the dog. BUT I would like to play with another DigitalPal.", "Yes, I'm done playing with all DigitalPals."]
+    }
+  ])
 }
