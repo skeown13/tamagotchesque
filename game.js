@@ -57,117 +57,123 @@ let owl
 let bunny
 let elephant
 
-inquirer.prompt([
-  {
-    type: "list",
-    name: "pet",
-    message: "Would you like a Dog Digital Pet or a Cat Digital Pet?",
-    choices: ["Dog", "Cat", "Owl", "Bunny", "Elephant"]
-  }
-]).then(function(answers) {
-  if (answers.pet === "Dog") {
-    dog = new DigitalPal()
-
-    dog.outside = true
-    dog.bark = function() {
-      console.log("Woof! Woof!")
+function initial() {
+  inquirer.prompt([
+    {
+      type: "list",
+      name: "pet",
+      message: "Would you like a Dog Digital Pet or a Cat Digital Pet?",
+      choices: ["Dog", "Cat", "Owl", "Bunny", "Elephant"]
     }
-    dog.goOutside = function() {
-      this.sleepy = false
-      if (this.outside) {
-        console.log("We're already outside though...")
-      } else {
-        console.log("Yay! I love the outdoors!")
-        this.outside = true
-        this.bark()
+  ]).then(function(answers) {
+    if (answers.pet === "Dog") {
+      dog = new DigitalPal()
+  
+      dog.outside = true
+      dog.bark = function() {
+        console.log("Woof! Woof!")
       }
-    }
-    dog.goInside = function() {
-      if (this.outside) {
-        console.log("Do we have to? Fine...")
-        this.outside = false
-      } else {
-        console.log("I'm already inside...")
+      dog.goOutside = function() {
+        this.sleepy = false
+        if (this.outside) {
+          console.log("We're already outside though...")
+        } else {
+          console.log("Yay! I love the outdoors!")
+          this.outside = true
+          this.bark()
+        }
       }
-    }
-
-    console.log("You choose a Dog!")
-    console.log('  _____  ')
-    console.log('(| . . |)')
-    console.log(' ( (Y) ) ')
-    console.log(' (")_(")_/')
-    console.log('')
-
-    dogInteract()
-
-  } else if (answers.pet === "Cat") {
-    cat = new DigitalPal()
-
-    cat.houseCondition = 100
-    cat.meow = function() {
-      console.log("Meow! Meow!")
-    }
-    cat.destroyFurniture = function() {
-      if (this.houseCondition > 0) {
-        this.houseCondition -= 10
-        console.log("MUAHAHAHAHA! TAKE THAT FURNITURE!")
+      dog.goInside = function() {
+        if (this.outside) {
+          console.log("Do we have to? Fine...")
+          this.outside = false
+        } else {
+          console.log("I'm already inside...")
+        }
       }
+  
+      console.log("You choose a Dog!")
+      console.log('  _____  ')
+      console.log('(| . . |)')
+      console.log(' ( (Y) ) ')
+      console.log(' (")_(")_/')
+      console.log('')
+  
+      dogInteract()
+  
+    } else if (answers.pet === "Cat") {
+      cat = new DigitalPal()
+  
+      cat.houseCondition = 100
+      cat.meow = function() {
+        console.log("Meow! Meow!")
+      }
+      cat.destroyFurniture = function() {
+        if (this.houseCondition > 0) {
+          this.houseCondition -= 10
+          console.log("MUAHAHAHAHA! TAKE THAT FURNITURE!")
+        }
+      }
+      cat.buyNewFurniture = function() {
+        this.houseCondition += 30
+        console.log("The condition of your house is now at " + cat.houseCondition + "%")
+      }
+  
+      console.log("You choose a Cat!")
+      console.log(' /\\_/\\ ')
+      console.log('(=^.^=)')
+      console.log('(")(")_/ ')
+      console.log('')
+  
+      catInteract()
+  
+    } else if (answers.pet === "Owl") {
+      owl = new DigitalPal()
+  
+      owl.fly = function() {
+        console.log("There's nothing better than soaring through the open skies!")
+      }
+      owl.hunt = function() {
+  
+      }
+  
+      console.log("You choose an Owl!")
+      console.log(",___,")
+      console.log("(O,O)")
+      console.log("/)_)")
+      console.log(' "" ')
+  
+      owlInteract()
+  
+    } else if (answers.pet === "Bunny") {
+      bunny = new DigitalPal()
+  
+      console.log("You choose a Bunny!")
+      console.log('  (\\_/)')
+      console.log(' =(^.^)=')
+      console.log(' (")_(")')
+      console.log('')
+  
+      bunnyInteract()
+  
+    } else if (answers.pet === "Elephant") {
+      elephant = new DigitalPal()
+  
+      console.log("You choose an Elephant!")
+      console.log('  _    _')
+      console.log(' /=\\""/=\\')
+      console.log('(=(0_0 |=)')
+      console.log(' \\_\\ _/_/')
+      console.log('   /_/')
+      console.log('  |/')
+      console.log('')
+  
+      elephantInteract()
+  
     }
-    cat.buyNewFurniture = function() {
-      this.houseCondition += 30
-      console.log("The condition of your house is now at " + cat.houseCondition + "%")
-    }
+  })
+}
 
-    console.log("You choose a Cat!")
-    console.log(' /\\_/\\ ')
-    console.log('(=^.^=)')
-    console.log('(")(")_/ ')
-    console.log('')
+initial()
 
-    catInteract()
-
-  } else if (answers.pet === "Owl") {
-    owl = new DigitalPal()
-
-    owl.fly = function() {
-      console.log("There's nothing better than soaring through the open skies!")
-    }
-    owl.hunt = function() {
-
-    }
-
-    console.log("You choose an Owl!")
-    console.log(",___,")
-    console.log("(O,O)")
-    console.log("/)_)")
-    console.log(' "" ')
-
-    owlInteract()
-
-  } else if (answers.pet === "Bunny") {
-    bunny = new DigitalPal()
-
-    console.log("You choose a Bunny!")
-    console.log('  (\\_/)')
-    console.log(' =(^.^)=')
-    console.log(' (")_(")')
-    console.log('')
-
-    bunnyInteract()
-
-  } else if (answers.pet === "Elephant") {
-    elephant = new DigitalPal()
-
-    console.log("You choose an Elephant!")
-    console.log('  _    _')
-    console.log(' /=\\""/=\\')
-    console.log('(=(0_0 |=)')
-    console.log(' \\_\\ _/_/')
-    console.log('   /_/')
-    console.log('  |/')
-    console.log('')
-
-    elephantInteract()
-
-  }
-})
+// module.exports = { initial }
