@@ -123,5 +123,11 @@ function bunnyDone() {
       message: "Are you done playing with the bunny?",
       choices: ["NO!! I made a mistake. I still want to play with the bunny!", "Yes I am done playing with the bunny. BUT I would like to play with another DigitalPal.", "Yes, I'm done playing with all DigitalPals."]
     }
-  ])
+  ]).then(function(answers) {
+    if (answers.bunnyDone === "NO!! I made a mistake. I still want to play with the bunny!") {
+      bunnyInteract()
+    } else if (answers.bunnyDone === "Yes I am done playing with the bunny. BUT I would like to play with another DigitalPal.") {
+      initial()
+    }
+  })
 }
