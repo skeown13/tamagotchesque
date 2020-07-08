@@ -14,6 +14,8 @@ function owlInteract() {
       owlEat()
     } else if (answers.owlOpt === "Sleep") {
       owlSleep()
+    } else if (answers.owlOpt === "Done?") {
+      owlDone()
     }
   })
 }
@@ -75,4 +77,15 @@ function owlSleep() {
   owl.sleep()
 
   owlInteract()
+}
+
+function owlDone() {
+  inquirer.prompt([
+    {
+      type: "list",
+      name: "owlDone",
+      message: "Are you done playing with the owl?",
+      choices: ["NO!! I made a mistake. I still want to play with the owl!", "Yes I am done playing with the owl. BUT I would like to play with another DigitalPal.", "Yes, I'm done playing with all DigitalPals."]
+    }
+  ])
 }
