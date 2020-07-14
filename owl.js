@@ -10,6 +10,8 @@ function owlInteract() {
   ]).then(function(answers) {
     if (answers.owlOpt === "Fly") {
       owlFly()
+    } else if (answers.owlOpt === "Hunt") {
+      owlHunt()
     } else if (answers.owlOpt === "Eat") {
       owlEat()
     } else if (answers.owlOpt === "Sleep") {
@@ -38,6 +40,10 @@ function owlFly() {
   owl.fly()
 
   owlInteract()
+}
+
+function owlHunt() {
+  
 }
 
 function owlEat() {
