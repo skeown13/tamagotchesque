@@ -43,7 +43,7 @@ function owlFly() {
 }
 
 function owlHunt() {
-  
+  let rndHunt = Math.floor(Math.random() * 2)
 }
 
 function owlEat() {
