@@ -45,6 +45,8 @@ function owlFly() {
 function owlHunt() {
   let rndHunt = Math.floor(Math.random() * 2)
   
+  owl.hungry = true
+
   if (owl.bored) {
     if (rndHunt === 0) {
       console.log("")
@@ -88,6 +90,10 @@ function owlHunt() {
       }
       console.log("")
     }
+  } else {
+    console.log("")
+    console.log("There's no need to hunt! We already have full bellies.")
+    console.log("")
   }
   
 
@@ -95,7 +101,9 @@ function owlHunt() {
 }
 
 function owlEat() {
-  if (owl.hungry) {
+  if (owl.hungry && owl.score > 0) {
+    owl.bored = false
+
     console.log("")
     console.log("()(),~~,.")
     console.log(" xx ___; )")
