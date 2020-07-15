@@ -71,6 +71,7 @@ function dogOutside() {
 function dogPlay() {
   if (dog.bored) {
     dog.bark()
+    dog.played = true
   } else {
     console.log("")
     console.log("We're not allowed to play inside. We might break something!")
@@ -85,7 +86,6 @@ function dogPlay() {
 let dogPlayArray = [dogBall, dogButterfly, dogRun]
 
 function dogBall() {
-  console.log("")
   console.log("Throw the ball! Throw the ball!! I will catch it and bring it back to you!!! And then we can do it again and AGAIN!")
   console.log("")
   console.log("                          _._  ")
@@ -100,7 +100,6 @@ function dogBall() {
 }
 
 function dogButterfly() {
-  console.log("")
   console.log("Let's chase butterflies!! That'll be fun!")
   console.log("")
   console.log("                       __   __")
@@ -115,7 +114,6 @@ function dogButterfly() {
 }
 
 function dogRun() {
-  console.log("")
   console.log("I wanna run!!! I betcha I can run faster that you!")
   console.log("")
   console.log("             .--~~,__")
@@ -129,33 +127,38 @@ function dogRun() {
 }
 
 function dogEat() {
-  if (dog.hungry) {
+  if (dog.hungry && dog.played) {
     console.log("")
     console.log('(`"======="`)')
     console.log('(_.=======._)')
+    dog.eat()
   } else if (!dog.hungry && dog.outside) {
     console.log("")
     console.log("It's much too exciting outside to eat!!")
     console.log("")
-  } else if (!dog.hungry && dog.goInside) {
+  } else if (!dog.played) {
     console.log("")
     console.log("I'm not hungry. We haven't even played yet!")
     console.log("")
+  } else if (!dog.outside && !dog.hungry) {
+    console.log("")
+    console.log("We just ate! It would be silly to eat again so soon.")
+    console.log("")
   }
-  dog.eat()
 
   dogInteract()
 }
 
 function dogSleep() {
   if (dog.sleepy) {
+    dog.played = false
+
     console.log("")
     console.log("                __")
     console.log("               /\\/'-,")
     console.log("       ,--'''''   /\"")
     console.log(" ____,'.  )       \\___")
     console.log("'\"\"\"\"\"------'\"\"\"`-----'")
-    console.log("")
   }
   
   dog.sleep()
