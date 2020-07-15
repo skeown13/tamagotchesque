@@ -154,6 +154,7 @@ function initial() {
 
       owl.score = 0
       owl.highscore = 0
+      owl.caught = 0
   
       owl.fly = function() {
         console.log("")

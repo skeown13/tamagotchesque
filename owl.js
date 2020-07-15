@@ -68,6 +68,8 @@ function owlHunt() {
       console.log("")
     } else if (rndHunt === 1) {
       owl.score++
+      owl.caught++
+
       console.log("")
       console.log("Success!")
       console.log("")
@@ -83,6 +85,7 @@ function owlHunt() {
       console.log("                  `\"\\`-.")
       console.log("                     `\"`")
       console.log("")
+
       if (owl.score === 1) {
         console.log("You have caught " + owl.score + " rodent!")
       } else if (owl.score > 1) {
@@ -101,9 +104,10 @@ function owlHunt() {
 }
 
 function owlEat() {
-  if (owl.hungry && owl.score > 0) {
+  if (owl.hungry && owl.caught > 0) {
     owl.bored = false
     owl.sleepy = true
+    owl.caught--
 
     console.log("")
     console.log("()(),~~,.")
@@ -143,11 +147,12 @@ function owlSleep() {
       console.log("Your hunting score today was " + owl.score + ". Congratulations! That's a New Highscore!!")
       console.log("")
     } else {
-      console.log("Your hunting score today was " + owl.score + ". Try going for a Highscore tomorrow!")
+      console.log("Your hunting score today was " + owl.score + ". You're Highscore is " + owl.highscore + ". Try going for a New Highscore tomorrow!")
       console.log("")
     }
 
     owl.score = 0
+    owl.caught = 0
     owl.bored = true
   } 
 
