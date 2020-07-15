@@ -44,6 +44,14 @@ function owlFly() {
 
 function owlHunt() {
   let rndHunt = Math.floor(Math.random() * 2)
+
+  if (rndHunt === 0) {
+    console.log("Missed!")
+  } else if (rndHunt === 1) {
+    console.log("Hit!")
+  }
+
+  owlInteract()
 }
 
 function owlEat() {
