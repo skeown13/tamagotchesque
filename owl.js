@@ -103,6 +103,7 @@ function owlHunt() {
 function owlEat() {
   if (owl.hungry && owl.score > 0) {
     owl.bored = false
+    owl.sleepy = true
 
     console.log("")
     console.log("()(),~~,.")
@@ -134,6 +135,16 @@ function owlSleep() {
     console.log("  , -=-~' .-^- _")
     console.log("           `")
     console.log("")
+
+    if (owl.score > owl.highscore) {
+      owl.highscore = owl.score
+      console.log("Your hunting score today was " + owl.score + ". Congratulations! That's a New Highscore!!")
+    } else {
+      console.log("Your hunting score today was " + owl.score + ". Try going for a Highscore tomorrow!")
+    }
+
+    owl.score = 0
+    owl.bored = true
   } 
 
   owl.sleep()
