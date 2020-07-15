@@ -66,7 +66,27 @@ function owlHunt() {
       console.log("")
     } else if (rndHunt === 1) {
       owl.score++
-      console.log("Hit! Your score is " + owl.score)
+      console.log("")
+      console.log("Success!")
+      console.log("")
+      console.log("                         ____    .-.")
+      console.log("                     .-\"`    `\",( __\\_")
+      console.log("      .-==:;-._    .'         .-.     `'.")
+      console.log("   .'      `\"-:'-/          (  \\} -=a  .)")
+      console.log("   /            \\/       \\,== `-  __..-'`")
+      console.log("'-'              |       |   |  .'\\ `;")
+      console.log("                  \\    _/---'\\ (   `\"`")
+      console.log("                 /.`._ )      \\ `;")
+      console.log("                 \\`-/.'        `\"`")
+      console.log("                  `\"\\`-.")
+      console.log("                     `\"`")
+      console.log("")
+      if (owl.score === 1) {
+        console.log("You have caught " + owl.score + " rodent!")
+      } else if (owl.score > 1) {
+        console.log("You have caught " + owl.score + " rodents!")
+      }
+      console.log("")
     }
   }
   
