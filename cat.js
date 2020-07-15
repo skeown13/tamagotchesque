@@ -73,18 +73,24 @@ function catHouseCondition() {
 }
 
 function catDestroyFurniture() {
-  console.log("")
-  console.log("             ____")
-  console.log("            /    \\")
-  console.log("           /______\\")
-  console.log("              ||")
-  console.log("              ||   /\\_/\\")
-  console.log("  /~~~~~~\\    ||   >^.^<.---.")
-  console.log("/~ ( )( ) ~\\  ||  _'-`-'     )\\")
-  console.log("(_)======(_)  || (6--\\ |--\\ (`.`-.")
-  console.log(" |________|  _||_    --'  --'  ``-'")
-
-  cat.destroyFurniture()
+  if (cat.houseCondition > 0) {
+    console.log("")
+    console.log("             ____")
+    console.log("            /    \\")
+    console.log("           /______\\")
+    console.log("              ||")
+    console.log("              ||   /\\_/\\")
+    console.log("  /~~~~~~\\    ||   >^.^<.---.")
+    console.log("/~ ( )( ) ~\\  ||  _'-`-'     )\\")
+    console.log("(_)======(_)  || (6--\\ |--\\ (`.`-.")
+    console.log(" |________|  _||_    --'  --'  ``-'")
+  
+    cat.destroyFurniture()
+  } else {
+    console.log("")
+    console.log("Your house is completely DESTROYED!!! You must purchase some new furniture before any more destruction may take place.")
+    console.log("")
+  }
 
   catInteract()
 }
