@@ -129,6 +129,9 @@ function initial() {
   
     } else if (answers.pet === "Owl") {
       owl = new DigitalPal()
+
+      owl.score = 0
+      owl.highscore = 0
   
       owl.fly = function() {
         console.log("There's nothing better than soaring through the open skies!")
