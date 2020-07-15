@@ -86,7 +86,9 @@ function bunnyEat() {
     console.log(" _.-'/ '.____,,,,----\"\"\"~~```'")
     console.log("")
   } else {
+    console.log("")
     console.log("We can't eat yet... We haven't even played!")
+    console.log("")
   }
 
   bunny.eat()
