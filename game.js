@@ -164,9 +164,6 @@ function initial() {
         console.log("There's nothing better than soaring through the open skies!")
         console.log("")
       }
-      owl.hunt = function() {
-  
-      }
   
       console.log("")
       console.log("You choose an Owl!")
