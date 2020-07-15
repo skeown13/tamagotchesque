@@ -29,7 +29,6 @@ function dogInside() {
   dog.hungry = true
   dog.goInside()
 
-  console.log("")
   console.log("   .-------------.")
   console.log("  /_/_/_/_/_/_/_/ \\")
   console.log(" //_/_/_/_/_/_// _ \\")
@@ -134,7 +133,6 @@ function dogEat() {
     console.log("")
     console.log('(`"======="`)')
     console.log('(_.=======._)')
-    console.log("")
   } else if (!dog.hungry && dog.outside) {
     console.log("")
     console.log("It's much too exciting outside to eat!!")

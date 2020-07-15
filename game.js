@@ -80,7 +80,6 @@ function initial() {
   
       dog.outside = true
       dog.bark = function() {
-        console.log("")
         console.log("Woof! Woof!")
       }
       dog.goOutside = function() {
@@ -88,11 +87,9 @@ function initial() {
         if (this.outside) {
           console.log("")
           console.log("We're already outside though...")
-          console.log("")
         } else {
           console.log("")
           console.log("Yay! I love the outdoors!")
-          console.log("")
           this.outside = true
           this.bark()
         }
@@ -101,7 +98,6 @@ function initial() {
         if (this.outside) {
           console.log("")
           console.log("Do we have to? Fine...")
-          console.log("")
           this.outside = false
         } else {
           console.log("")
