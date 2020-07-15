@@ -111,7 +111,9 @@ function owlEat() {
     console.log("=`=     (_.")
     console.log("")
   } else {
+    console.log("")
     console.log("There's no such thing as a free meal! We must hunt our food if we want to eat...")
+    console.log("")
   }
 
   owlInteract()
@@ -139,8 +141,10 @@ function owlSleep() {
     if (owl.score > owl.highscore) {
       owl.highscore = owl.score
       console.log("Your hunting score today was " + owl.score + ". Congratulations! That's a New Highscore!!")
+      console.log("")
     } else {
       console.log("Your hunting score today was " + owl.score + ". Try going for a Highscore tomorrow!")
+      console.log("")
     }
 
     owl.score = 0
