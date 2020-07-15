@@ -31,6 +31,7 @@ function catHouseCondition() {
     console.log("")
     console.log("The condition of your house is at " + cat.houseCondition + "%")
     console.log("You're house is in GREAT condition. Looking good!")
+    console.log("")
     console.log("     ..    ")
     console.log(" .---''-.  ")
     console.log("/________\\")
@@ -43,6 +44,7 @@ function catHouseCondition() {
     console.log("")
     console.log("The condition of your house is at " + cat.houseCondition + "%")
     console.log("Your house is starting to look a bit beat up. Still not bad though!")
+    console.log("")
     console.log(" ________  ")
     console.log("|   __   | ")
     console.log("|[]|  |[]| ")
@@ -53,6 +55,7 @@ function catHouseCondition() {
     console.log("")
     console.log("The condition of your house is at " + cat.houseCondition + "%")
     console.log("You're house is really starting to show its wear and tear. You may want to consider purchasing some new furniture soon!")
+    console.log("")
     console.log("|[]|  |[]| ")
     console.log("|  |' |  | ")
     console.log("'--'--'--' ")
@@ -61,6 +64,7 @@ function catHouseCondition() {
     console.log("")
     console.log("The condition of your house is at " + cat.houseCondition + "%")
     console.log("Your house has basically been completely destroyed. You should really spruce it up some by buying new furniture!")
+    console.log("")
     console.log("'--'--'--' ")
     console.log("")
   }
@@ -101,7 +105,9 @@ function catBuyNewFurniture() {
     console.log("")
     cat.buyNewFurniture()
   } else {
+    console.log("")
     console.log("Your house is already perfect! No need to do that at this time.")
+    console.log("")
   }
 
   catInteract()
@@ -150,11 +156,15 @@ function catHunt() {
 
 function catEat() {
   if (cat.hungry) {
+    console.log("")
     console.log('( ( (')
     console.log(' ) ) )')
     console.log('>++++°>')
+    console.log("")
   } else {
+    console.log("")
     console.log("No thanks; I'm not hungry. Maybe we can play before eating.")
+    console.log("")
   }
   cat.eat()
 
