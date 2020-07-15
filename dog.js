@@ -29,6 +29,7 @@ function dogInside() {
   dog.hungry = true
   dog.goInside()
 
+  console.log("")
   console.log("   .-------------.")
   console.log("  /_/_/_/_/_/_/_/ \\")
   console.log(" //_/_/_/_/_/_// _ \\")
@@ -39,6 +40,7 @@ function dogInside() {
   console.log(" |_____________||_||")
   console.log("")
   console.log("Now what?")
+  console.log("")
 
   dogInteract()
 }
@@ -48,6 +50,7 @@ function dogOutside() {
   dog.hungry = false
   dog.goOutside()
 
+  console.log("")
   console.log("  \\_/ ")
   console.log("--(_)--")
   console.log("  / \\ ")
@@ -61,6 +64,7 @@ function dogOutside() {
   console.log("         |      \\|      ")
   console.log("")
   console.log("Now what?")
+  console.log("")
 
   dogInteract()
 }
@@ -69,7 +73,9 @@ function dogPlay() {
   if (dog.bored) {
     dog.bark()
   } else {
+    console.log("")
     console.log("We're not allowed to play inside. We might break something!")
+    console.log("")
   }
 
   dog.play(dogPlayArray)
@@ -80,6 +86,7 @@ function dogPlay() {
 let dogPlayArray = [dogBall, dogButterfly, dogRun]
 
 function dogBall() {
+  console.log("")
   console.log("Throw the ball! Throw the ball!! I will catch it and bring it back to you!!! And then we can do it again and AGAIN!")
   console.log("")
   console.log("                          _._  ")
@@ -89,10 +96,12 @@ function dogBall() {
   console.log("         `.'       `.'")
   console.log("")
   console.log("That was so much fun!")
+  console.log("")
 
 }
 
 function dogButterfly() {
+  console.log("")
   console.log("Let's chase butterflies!! That'll be fun!")
   console.log("")
   console.log("                       __   __")
@@ -107,6 +116,7 @@ function dogButterfly() {
 }
 
 function dogRun() {
+  console.log("")
   console.log("I wanna run!!! I betcha I can run faster that you!")
   console.log("")
   console.log("             .--~~,__")
@@ -121,12 +131,18 @@ function dogRun() {
 
 function dogEat() {
   if (dog.hungry) {
+    console.log("")
     console.log('(`"======="`)')
     console.log('(_.=======._)')
+    console.log("")
   } else if (!dog.hungry && dog.outside) {
+    console.log("")
     console.log("It's much too exciting outside to eat!!")
+    console.log("")
   } else if (!dog.hungry && dog.goInside) {
+    console.log("")
     console.log("I'm not hungry. We haven't even played yet!")
+    console.log("")
   }
   dog.eat()
 
