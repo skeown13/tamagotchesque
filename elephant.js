@@ -83,7 +83,9 @@ function elephantEat() {
     console.log("       `-'  ")
     console.log("")
   } else {
+    console.log("")
     console.log("We can't eat yet... We haven't even played!")
+    console.log("")
   }
 
   elephant.eat()
