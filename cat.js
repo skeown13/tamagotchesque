@@ -20,7 +20,7 @@ function catInteract() {
       catEat()
     } else if (answers.catOpt) {
       catSleep()
-    } else if (answers.dogOpt === "Done?") {
+    } else if (answers.catOpt === "Done?") {
       catDone()
     }
   })
