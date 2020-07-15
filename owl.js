@@ -47,7 +47,23 @@ function owlHunt() {
   
   if (owl.bored) {
     if (rndHunt === 0) {
+      console.log("")
       console.log("Missed!")
+      console.log("")
+      console.log("                    _   _")
+      console.log("                   :o`.'o`")
+      console.log("                   `-':`-'")
+      console.log("                      :      ,-.")
+      console.log("                  ,..-Y--..,;   ;.")
+      console.log("                .`          :     `.")
+      console.log("  _           .'             '-   O;.")
+      console.log(",' `.        ;     __          __    `'@")
+      console.log("`.   `-.,_,..    ,'..`.      ,'..`. ..-'")
+      console.log("  ;         \"---+ dXXb `----+ dXXb '")
+      console.log("                  qXXp        qXXp")
+      console.log("                   ''          ''")
+      console.log("Haha!! You can't catch me! I'm a mouse on wheels!!")
+      console.log("")
     } else if (rndHunt === 1) {
       owl.score++
       console.log("Hit! Your score is " + owl.score)
