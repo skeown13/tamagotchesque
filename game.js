@@ -124,7 +124,6 @@ function initial() {
       cat.meow = function() {
         console.log("")
         console.log("Meow! Meow!")
-        console.log("")
       }
       cat.destroyFurniture = function() {
         if (this.houseCondition > 0) {

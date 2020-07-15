@@ -83,7 +83,6 @@ function catDestroyFurniture() {
   console.log("/~ ( )( ) ~\\  ||  _'-`-'     )\\")
   console.log("(_)======(_)  || (6--\\ |--\\ (`.`-.")
   console.log(" |________|  _||_    --'  --'  ``-'")
-  console.log("")
 
   cat.destroyFurniture()
 
@@ -102,7 +101,7 @@ function catBuyNewFurniture() {
     console.log("   ||  /~ ( )( )( )( )( ) ~\\")
     console.log("   ||  (_)===============(_)")
     console.log("  _||_  |_________________|")
-    console.log("")
+
     cat.buyNewFurniture()
   } else {
     console.log("")
@@ -125,7 +124,6 @@ function catPlay() {
 let catPlayArray = [catBox, catHunt]
 
 function catBox() {
-  console.log("")
   console.log("Ooooo LOOK!!! A box!")
   console.log("                         ,")
   console.log("  ,-.       _,---._ __  / \\")
@@ -144,7 +142,6 @@ function catBox() {
 }
 
 function catHunt() {
-  console.log("")
   console.log("On the prowl! Gonna hunt me a mouse!")
   console.log(" _._     _,-'\"\"`-._")
   console.log("(,-.`._,'(       |\\`-/|")
@@ -160,7 +157,6 @@ function catEat() {
     console.log('( ( (')
     console.log(' ) ) )')
     console.log('>++++°>')
-    console.log("")
   } else {
     console.log("")
     console.log("No thanks; I'm not hungry. Maybe we can play before eating.")
@@ -186,7 +182,6 @@ function catSleep() {
     console.log("       `---.sssssssssssssssssssss.---'")
     console.log("")
     console.log("What a lovely Cat Nap! I feel refreshed and ready to go!!")
-    console.log("")
   }
   
   cat.sleep()
