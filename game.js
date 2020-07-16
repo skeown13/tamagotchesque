@@ -2,11 +2,11 @@ let inquirer = require("inquirer")
 let colors = require("colors")
 let fs = require("fs")
 
-eval(fs.readFileSync("dog.js") + "")
-eval(fs.readFileSync("cat.js") + "")
-eval(fs.readFileSync("owl.js") + "")
-eval(fs.readFileSync("bunny.js") + "")
-eval(fs.readFileSync("elephant.js") + "")
+eval(fs.readFileSync("./assets/javascript/dog.js") + "")
+eval(fs.readFileSync("./assets/javascript/cat.js") + "")
+eval(fs.readFileSync("./assets/javascript/owl.js") + "")
+eval(fs.readFileSync("./assets/javascript/bunny.js") + "")
+eval(fs.readFileSync("./assets/javascript/elephant.js") + "")
 
 // The Original Constructor used as the base for all animals
 
