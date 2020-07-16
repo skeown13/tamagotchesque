@@ -50,7 +50,7 @@ function owlHunt() {
   if (owl.bored) {
     if (rndHunt === 0) {
       console.log("")
-      console.log("Missed!")
+      console.log("Missed!".red)
       console.log("")
       console.log("                    _   _")
       console.log("                   :o`.'o`")
@@ -64,14 +64,14 @@ function owlHunt() {
       console.log("  ;         \"---+ dXXb `----+ dXXb '")
       console.log("                  qXXp        qXXp")
       console.log("                   ''          ''")
-      console.log("Haha!! You can't catch me! I'm a mouse on wheels!!")
+      console.log("Haha!! You can't catch me! I'm a mouse on wheels!!".cyan)
       console.log("")
     } else if (rndHunt === 1) {
       owl.score++
       owl.caught++
 
       console.log("")
-      console.log("Success!")
+      console.log("Success!".green)
       console.log("")
       console.log("                         ____    .-.")
       console.log("                     .-\"`    `\",( __\\_")
@@ -87,15 +87,15 @@ function owlHunt() {
       console.log("")
 
       if (owl.score === 1) {
-        console.log("You have caught " + owl.score + " rodent!")
+        console.log("You have caught ".cyan + owl.score + " rodent!".cyan)
       } else if (owl.score > 1) {
-        console.log("You have caught " + owl.score + " rodents!")
+        console.log("You have caught ".cyan + owl.score + " rodents!".cyan)
       }
       console.log("")
     }
   } else {
     console.log("")
-    console.log("There's no need to hunt! We already have full bellies.")
+    console.log("There's no need to hunt! We already have full bellies.".red)
     console.log("")
   }
   
@@ -116,7 +116,7 @@ function owlEat() {
     console.log("")
   } else {
     console.log("")
-    console.log("There's no such thing as a free meal! We must hunt our food if we want to eat...")
+    console.log("There's no such thing as a free meal! We must hunt our food if we want to eat...".red)
     console.log("")
   }
 
@@ -144,9 +144,9 @@ function owlSleep() {
 
     if (owl.score > owl.highscore) {
       owl.highscore = owl.score
-      console.log("Your hunting score today was " + owl.score + ". Congratulations! That's a New Highscore!!")
+      console.log("Your hunting score today was ".magenta + owl.score + ". Congratulations! That's a New Highscore!!".magenta)
     } else {
-      console.log("Your hunting score today was " + owl.score + ". You're Highscore is " + owl.highscore + ". Try going for a New Highscore tomorrow!")
+      console.log("Your hunting score today was ".magenta + owl.score + ". You're Highscore is ".magenta + owl.highscore + ". Try going for a New Highscore tomorrow!".magenta)
     }
 
     owl.score = 0

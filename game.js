@@ -19,7 +19,7 @@ function DigitalPal () {
   this.eat = function() {
     if (this.hungry) {
       console.log("")
-      console.log("That was yummy!")
+      console.log("That was yummy!".cyan)
       console.log("")
       this.hungry = false
       this.sleepy = true
@@ -31,7 +31,7 @@ function DigitalPal () {
       this.increaseDay()
     } else {
       console.log("")
-      console.log("No way! I'm not tired.")
+      console.log("No way! I'm not tired.".red)
       console.log("")
     }
   }
@@ -39,7 +39,7 @@ function DigitalPal () {
     if (this.bored) {
       let animalPlayRnd = Math.floor(Math.random() * animalPlayArray.length)
       console.log("")
-      console.log("Yay! Let's play!")
+      console.log("Yay! Let's play!".cyan)
       console.log("")
       animalPlayArray[animalPlayRnd]()
     }
@@ -48,12 +48,12 @@ function DigitalPal () {
     this.day += 1
     if (this.day === 1) {
       console.log("")
-      console.log("A new day! We've been playing for " + this.day + " day!")
+      console.log("A new day! We've been playing for ".green + this.day + " day!".green)
     } else if (this.day > 1) {
       console.log("")
-      console.log("A new day! We've been playing for " + this.day + " days!")
+      console.log("A new day! We've been playing for ".green + this.day + " days!".green)
     }
-    console.log("What are we going to do today?")
+    console.log("What are we going to do today?".green)
     console.log("")
   }
 }
@@ -83,27 +83,27 @@ function initial() {
       dog.played = false
       dog.bark = function() {
         console.log("")
-        console.log("Woof! Woof!")
+        console.log("Woof! Woof!".cyan)
       }
       dog.goOutside = function() {
         this.sleepy = false
         if (this.outside) {
           console.log("")
-          console.log("We're already outside though...")
+          console.log("We're already outside though...".red)
         } else {
           this.bark()
-          console.log("Yay! I love the outdoors!")
+          console.log("Yay! I love the outdoors!".cyan)
           this.outside = true
         }
       }
       dog.goInside = function() {
         if (this.outside) {
           console.log("")
-          console.log("Do we have to? Fine...")
+          console.log("Do we have toooo? Fine...".cyan)
           this.outside = false
         } else {
           console.log("")
-          console.log("I'm already inside...")
+          console.log("I'm already inside...".red)
           console.log("")
         }
       }
@@ -124,20 +124,20 @@ function initial() {
       cat.houseCondition = 100
       cat.meow = function() {
         console.log("")
-        console.log("Meow! Meow!")
+        console.log("Meow! Meow!".cyan)
       }
       cat.destroyFurniture = function() {
         if (this.houseCondition > 0) {
           this.houseCondition -= 10
           console.log("")
-          console.log("MUAHAHAHAHA! TAKE THAT FURNITURE!")
+          console.log("MUAHAHAHAHA! TAKE THAT FURNITURE!".cyan)
           console.log("")
         }
       }
       cat.buyNewFurniture = function() {
         this.houseCondition += 30
         console.log("")
-        console.log("The condition of your house is now at " + cat.houseCondition + "%")
+        console.log("The condition of your house is now at ".magenta + cat.houseCondition + "%".magenta)
         console.log("")
       }
   
@@ -159,7 +159,7 @@ function initial() {
   
       owl.fly = function() {
         console.log("")
-        console.log("There's nothing better than soaring through the open skies!")
+        console.log("There's nothing better than soaring through the open skies!".cyan)
         console.log("")
       }
   

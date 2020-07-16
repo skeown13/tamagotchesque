@@ -29,8 +29,8 @@ function catInteract() {
 function catHouseCondition() {
   if (cat.houseCondition >= 80) {
     console.log("")
-    console.log("The condition of your house is at " + cat.houseCondition + "%")
-    console.log("You're house is in GREAT condition. Looking good!")
+    console.log("The condition of your house is at ".green + cat.houseCondition + "%".green)
+    console.log("You're house is in GREAT condition. Looking good!".green)
     console.log("")
     console.log("     ..    ")
     console.log(" .---''-.  ")
@@ -42,8 +42,8 @@ function catHouseCondition() {
     console.log("")
   } else if (cat.houseCondition > 50 && cat.houseCondition < 80) {
     console.log("")
-    console.log("The condition of your house is at " + cat.houseCondition + "%")
-    console.log("Your house is starting to look a bit beat up. Still not bad though!")
+    console.log("The condition of your house is at ".cyan + cat.houseCondition + "%".cyan)
+    console.log("Your house is starting to look a bit beat up. Still not bad though!".cyan)
     console.log("")
     console.log(" ________  ")
     console.log("|   __   | ")
@@ -53,8 +53,8 @@ function catHouseCondition() {
     console.log("")
   } else if (cat.houseCondition > 20 && cat.houseCondition <= 50) {
     console.log("")
-    console.log("The condition of your house is at " + cat.houseCondition + "%")
-    console.log("You're house is really starting to show its wear and tear. You may want to consider purchasing some new furniture soon!")
+    console.log("The condition of your house is at ".yellow + cat.houseCondition + "%".yellow)
+    console.log("You're house is really starting to show its wear and tear. You may want to consider purchasing some new furniture soon!".yellow)
     console.log("")
     console.log("|[]|  |[]| ")
     console.log("|  |' |  | ")
@@ -62,8 +62,8 @@ function catHouseCondition() {
     console.log("")
   } else if (cat.houseCondition <= 20) {
     console.log("")
-    console.log("The condition of your house is at " + cat.houseCondition + "%")
-    console.log("Your house has basically been completely destroyed. You should really spruce it up some by buying new furniture!")
+    console.log("The condition of your house is at ".red + cat.houseCondition + "%".red)
+    console.log("Your house has basically been completely destroyed. You should really spruce it up some by buying new furniture!".red)
     console.log("")
     console.log("'--'--'--' ")
     console.log("")
@@ -88,7 +88,7 @@ function catDestroyFurniture() {
     cat.destroyFurniture()
   } else {
     console.log("")
-    console.log("Your house is completely DESTROYED!!! You must purchase some new furniture before any more destruction may take place.")
+    console.log("Your house is completely DESTROYED!!! You must purchase some new furniture before any more destruction may take place.".red)
     console.log("")
   }
 
@@ -111,7 +111,7 @@ function catBuyNewFurniture() {
     cat.buyNewFurniture()
   } else {
     console.log("")
-    console.log("Your house is already perfect! No need to do that at this time.")
+    console.log("Your house is already perfect! No need to do that at this time.".green)
     console.log("")
   }
 
@@ -130,7 +130,7 @@ function catPlay() {
 let catPlayArray = [catBox, catHunt]
 
 function catBox() {
-  console.log("Ooooo LOOK!!! A box!")
+  console.log("Ooooo LOOK!!! A box!".cyan)
   console.log("                         ,")
   console.log("  ,-.       _,---._ __  / \\")
   console.log(" /  )    .-'       `./ /   \\")
@@ -148,7 +148,7 @@ function catBox() {
 }
 
 function catHunt() {
-  console.log("On the prowl! Gonna hunt me a mouse!")
+  console.log("On the prowl! Gonna hunt me a mouse!".cyan)
   console.log(" _._     _,-'\"\"`-._")
   console.log("(,-.`._,'(       |\\`-/|")
   console.log("    `-.-' \\ )-`( , o o)      __()()")
@@ -165,7 +165,7 @@ function catEat() {
     console.log('>++++°>')
   } else {
     console.log("")
-    console.log("No thanks; I'm not hungry. Maybe we can play before eating.")
+    console.log("No thanks; I'm not hungry. Maybe we can play before eating.".red)
     console.log("")
   }
   cat.eat()
@@ -187,7 +187,7 @@ function catSleep() {
     console.log("  `-ssssssssssssssssss ~~~~~~~~~~~~ ssss.-'")
     console.log("       `---.sssssssssssssssssssss.---'")
     console.log("")
-    console.log("What a lovely Cat Nap! I feel refreshed and ready to go!!")
+    console.log("What a lovely Cat Nap! I feel refreshed and ready to go!!".magenta)
   }
   
   cat.sleep()

@@ -24,7 +24,7 @@ function elephantPlay() {
   if (elephant.bored) {
     elephant.hungry = true
   } else {
-    console.log("no")
+    console.log("no".red)
   }
 
   elephant.play(elephantPlayArray)
@@ -39,7 +39,7 @@ function elephantTrain() {
   console.log("    /\\\\     /\\\\   _.--/ `.   ,' (   \"_//\"")
   console.log(" ,''\\,\"  ,\"\"\\,\"=='(   \\.'\\\\_,(  _`-'=-'")
   console.log("' u-u `=' u-u     |l''|l  `\" |m' |m")
-  console.log("Choo Choo!! Here comes the Elephant Train! Choo Choo!!")
+  console.log("Choo Choo!! Here comes the Elephant Train! Choo Choo!!".cyan)
   console.log("")
 }
 
@@ -49,7 +49,7 @@ function elephantTrumpet() {
   console.log(" /(     `--'_,'")
   console.log("(  \\ |__| |'")
   console.log("   |_|  |_|")
-  console.log("Toot Toot!! My trunk makes a noise like a trumpet! Toot Toot!!")
+  console.log("Toot Toot!! My trunk makes a noise like a trumpet! Toot Toot!!".cyan)
   console.log("")
 }
 
@@ -64,7 +64,7 @@ function elephantCircus() {
   console.log("        /\\_/\\_/\\_/\\_/\\")
   console.log("       /\\/ \\/ \\/ \\/ \\/\\")
   console.log("    __/________________\\__")
-  console.log("Look at me! Look at me!! I'm like one of those Circus Elephants!")
+  console.log("Look at me! Look at me!! I'm like one of those Circus Elephants!".cyan)
   console.log("")
 }
 
@@ -80,7 +80,7 @@ function elephantEat() {
     console.log("       `-'  ")
   } else {
     console.log("")
-    console.log("We can't eat yet... We haven't even played!")
+    console.log("We can't eat yet... We haven't even played!".red)
     console.log("")
   }
 

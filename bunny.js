@@ -24,7 +24,7 @@ function bunnyPlay() {
   if (bunny.bored) {
     bunny.hungry = true
   } else {
-    console.log("no")
+    console.log("no".red)
   }
 
   bunny.play(bunnyPlayArray)
@@ -41,7 +41,7 @@ function bunnyMeet() {
   console.log("  _/ #)                    __/') ('\\__  (# \\_")
   console.log(" .) ,/                   _/  /     \\  \\_ \\, (.")
   console.log(" /)#(_,,,,,,,,,,,,,,,,,,,\\,((,,,,,,,)),/,_)#(\\")
-  console.log("Oh hi there other bunny! We should play together.")
+  console.log("Oh hi there other bunny! We should play together.".cyan)
   console.log("")
 }
 
@@ -51,7 +51,7 @@ function bunnyHop() {
   console.log("       (        .\\")
   console.log("\\    / @\\___(__--'")
   console.log(" \\  /")
-  console.log("Hop Hop Hippity Hop!")
+  console.log("Hop Hop Hippity Hop!".cyan)
   console.log("")
 }
 
@@ -70,7 +70,7 @@ function bunnySwim() {
   console.log("            /___\\/_\\/|")
   console.log("                    \\ \\")
   console.log("                     \\/")
-  console.log("Well hello there fishy! Swim here often?")
+  console.log("Well hello there fishy! Swim here often?".cyan)
   console.log("")
 }
 
@@ -83,7 +83,7 @@ function bunnyEat() {
     console.log(" _.-'/ '.____,,,,----\"\"\"~~```'")
   } else {
     console.log("")
-    console.log("We can't eat yet... We haven't even played!")
+    console.log("We can't eat yet... We haven't even played!".red)
     console.log("")
   }
 
