@@ -145,10 +145,8 @@ function owlSleep() {
     if (owl.score > owl.highscore) {
       owl.highscore = owl.score
       console.log("Your hunting score today was " + owl.score + ". Congratulations! That's a New Highscore!!")
-      console.log("")
     } else {
       console.log("Your hunting score today was " + owl.score + ". You're Highscore is " + owl.highscore + ". Try going for a New Highscore tomorrow!")
-      console.log("")
     }
 
     owl.score = 0
