@@ -1,4 +1,5 @@
 let inquirer = require("inquirer")
+let colors = require("colors")
 let fs = require("fs")
 
 eval(fs.readFileSync("dog.js") + "")
