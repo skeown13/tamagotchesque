@@ -84,7 +84,6 @@ function bunnyEat() {
     console.log(" `-._\\ /     `~~\"--.,_")
     console.log("------>|              `~~\"--.,_")
     console.log(" _.-'/ '.____,,,,----\"\"\"~~```'")
-    console.log("")
   } else {
     console.log("")
     console.log("We can't eat yet... We haven't even played!")
@@ -109,7 +108,6 @@ function bunnySleep() {
     console.log("          _/ \\_")
     console.log("       __//   \\\\__")
     console.log("      /___\\/_\\/___\\")
-    console.log("")
   }
 
   bunny.sleep()
