@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/skeown13/tamagotchesque#readme",
   "dependencies": {
+    "colors": "^1.4.0",
     "inquirer": "^7.1.0"
   }
 }
