@@ -35,7 +35,6 @@ function elephantPlay() {
 let elephantPlayArray = [elephantTrain, elephantTrumpet, elephantCircus]
 
 function elephantTrain() {
-  console.log("")
   console.log("                       _       __,\"\\\\  _.")
   console.log("    /\\\\     /\\\\   _.--/ `.   ,' (   \"_//\"")
   console.log(" ,''\\,\"  ,\"\"\\,\"=='(   \\.'\\\\_,(  _`-'=-'")
@@ -45,7 +44,6 @@ function elephantTrain() {
 }
 
 function elephantTrumpet() {
-  console.log("")
   console.log("        .--._   _,-';")
   console.log("   ,---(    .`-',-'")
   console.log(" /(     `--'_,'")
@@ -56,7 +54,6 @@ function elephantTrumpet() {
 }
 
 function elephantCircus() {
-  console.log("")
   console.log("           .-~~-. .--.")
   console.log("          /      /   \"\\")
   console.log("         /    \\ |  \\   \\")
@@ -81,7 +78,6 @@ function elephantEat() {
     console.log(" `-'   )|(  ((|))")
     console.log("      ((|))  `-'")
     console.log("       `-'  ")
-    console.log("")
   } else {
     console.log("")
     console.log("We can't eat yet... We haven't even played!")
@@ -101,7 +97,6 @@ function elephantSleep() {
     console.log("  z   /_  \\_/  \\")
     console.log("   z // \\  ___ |\\")
     console.log("         |_| |_|")
-    console.log("")
   }
 
   elephant.sleep()
