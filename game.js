@@ -72,7 +72,7 @@ function initial() {
     {
       type: "list",
       name: "pet",
-      message: "Would you like a Dog Digital Pet or a Cat Digital Pet?",
+      message: "What DigitalPal would you like to play with?",
       choices: ["Dog", "Cat", "Owl", "Bunny", "Elephant"]
     }
   ]).then(function(answers) {
