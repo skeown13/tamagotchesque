@@ -37,6 +37,7 @@ function DigitalPal () {
   this.play = function(animalPlayArray) {
     if (this.bored) {
       let animalPlayRnd = Math.floor(Math.random() * animalPlayArray.length)
+      console.log("")
       console.log("Yay! Let's play!")
       console.log("")
       animalPlayArray[animalPlayRnd]()
@@ -89,10 +90,9 @@ function initial() {
           console.log("")
           console.log("We're already outside though...")
         } else {
-          console.log("")
+          this.bark()
           console.log("Yay! I love the outdoors!")
           this.outside = true
-          this.bark()
         }
       }
       dog.goInside = function() {
