@@ -35,7 +35,6 @@ function bunnyPlay() {
 let bunnyPlayArray = [bunnyMeet, bunnyHop, bunnySwim]
 
 function bunnyMeet() {
-  console.log("")
   console.log("    \\(,%%*%,_                      -%*%%,)/")
   console.log("  %%/*(                       /)   /)   )*\\%%")
   console.log(" %% )\\|                      (/   (/    |/( %%")
@@ -47,7 +46,6 @@ function bunnyMeet() {
 }
 
 function bunnyHop() {
-  console.log("")
   console.log("             \\\\")
   console.log("        ,-~~~-\\\\_")
   console.log("       (        .\\")
@@ -58,7 +56,6 @@ function bunnyHop() {
 }
 
 function bunnySwim() {
-  console.log("")
   console.log("               _     _    O  .")
   console.log("              /_\\   /_\\")
   console.log("              \\\\\\\\  \\\\\\\\   .  O")
