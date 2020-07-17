@@ -5,5 +5,6 @@
 
 **What is Tamagothcesque - Your DigitalPal?** It is a Tamagotchi type game.  
 **Where do I play with this "so called" DigitalPal?** Directly in your terminal.  
+**When should I do this?** There's no time like the present. Do it now!!  
 **How does it work?** Using Node of course.  
 **Why should I?** Why not?  
