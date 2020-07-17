@@ -18,6 +18,10 @@ Make sure that you are in the root directory of the project and then in your ter
   
 You will have the best user experience if you size your terminal window to be at least 115 wide x 30 long.  
 
+Also, with the coloring it appears to look best against a black background.  
+
+Most importantly... HAVE FUN!!!  
+
 # Tech Used  
 Javascript  
 Node  
