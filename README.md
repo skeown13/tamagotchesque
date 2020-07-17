@@ -11,7 +11,7 @@
 
 # Install  
 `$ npm install tamagotchesque`  
-After you do so make sure that you are in the root directory of the project and to a `$ npm install` to make sure that all of the dependencies have been installed correctly on your local machine.  
+After you do so make sure that you are in the root directory of the project, then run `$ npm install` in order to make sure that all of the dependencies have been installed correctly on your local machine.  
 
 # Usage  
 Make sure that you are in the root directory of the project and then in your terminal run `node game.js` then have fun!  
