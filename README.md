@@ -1,7 +1,9 @@
 ![Tamagotchesque](./assets/images/tamagotchesque.png)
 
+*Bored?... Need to waste 20-30+ minutes?... Well then Tamagotchesque is perfect for you!* 
+*Not bored?... Well give it a try anyways!*
 
-
-
-# tamagotchesque
-A Tamagotchi type game to play with in the terminal.
+**What is Tamagothcesque - Your DigitalPal?** It is a Tamagotchi type game.
+**Where do I play with this "so called" DigitalPal?** Directly in your terminal.
+**How does it work?** Using Node of course.
+**Why should I?** Why not?
