@@ -15,3 +15,18 @@ After you do so make sure that you are in the root directory of the project and 
 
 # Usage  
 Make sure that you are in the root directory of the project and then in your terminal run `node game.js` then have fun!  
+  
+You will have the best user experience if you size your terminal window to be at least 115 wide x 30 long.  
+
+# Tech Used  
+Javascript  
+Node  
+- Inquirer  
+- Colors  
+
+# Preview   
+![Owl DigitalPal](./assets/images/owlDigitalPal.png)  
+
+# Credits  
+For putting together an awesome library of ASCII Art images from whence I obtained most of the artwork: [ascii-art.de](http://www.ascii-art.de/ascii/)  
+For creating ASCII Art words in multiple different fonts: [patorjk.com](http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20)  
