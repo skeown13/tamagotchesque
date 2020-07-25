@@ -14,6 +14,7 @@
 - 3) After you've finished playing don't forget to eat something.  
 - 4) Once you've had a full "day" it's time to go to sleep.  
 - 5) Wake up and have another full "day" with your DigitalPal and/or choose a different DigitalPal to play with.  
+
 It's as simple as that!
 
 # Install  
