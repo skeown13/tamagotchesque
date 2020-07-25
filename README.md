@@ -21,7 +21,7 @@ In the root directory of your project create a new file - for example `app.js` -
 >tama.game()  
   
 Then in your command line (making sure you are in the correct directory) run `node app.js` and have fun!  
-*Or if you named your file something else, replace 'app.js' with the name of your file*   
+*Or if you named your file something else, replace 'app.js' with the name of your file.*   
   
 You will have the best user experience if you size your command line window to be at least 115 wide x 30 long.  
 
