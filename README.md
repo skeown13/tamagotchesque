@@ -4,19 +4,25 @@
 *Not bored?... Well give it a try anyways!*  
 
 **What is Tamagothcesque - Your DigitalPal?** It is a Tamagotchi type game.  
-**Where do I play with this "so called" DigitalPal?** Directly in your terminal.  
+**Where do I play with this "so called" DigitalPal?** Directly in your command line.  
 **When should I do this?** There's no time like the present. Do it now!!  
 **How does it work?** Using Node of course.  
 **Why should I?** Why not? 
 
 # Install  
-`$ npm install tamagotchesque`  
-After you do so make sure that you are in the root directory of the project, then run `$ npm install` in order to make sure that all of the dependencies have been installed correctly on your local machine.  
+Create a folder where you would like to access this game and run the following commands in this directory from your command line.  
+`$ npm init -y` to create a package.json file  
+`$ npm install tamagotchesque` to install the game  
+`$ npm install` in order to make sure that all of the dependencies have been installed correctly on your local machine  
 
 # Usage  
-Make sure that you are in the root directory of the project and then in your terminal run `node game.js` then have fun!  
+In the root directory of your project create a new file - for example `app.js` - and within that file require the package and call it:  
+    const tama = require("tamagotchesque")  
+    tama.game()  
+Then in your command line (making sure you are in the correct directory) run `node app.js` and have fun!  
+~Or if you named your file something else, replace 'app.js' with the name of your file~   
   
-You will have the best user experience if you size your terminal window to be at least 115 wide x 30 long.  
+You will have the best user experience if you size your command line window to be at least 115 wide x 30 long.  
 
 Also, with the coloring it appears to look best against a black background.  
 
