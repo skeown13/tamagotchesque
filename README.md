@@ -7,7 +7,14 @@
 **Where do I play with this "so called" DigitalPal?** Directly in your command line.  
 **When should I do this?** There's no time like the present. Do it now!!  
 **How does it work?** Using Node of course.  
-**Why should I?** Why not? 
+**Why should I?** Why not?  
+**A little more information please?** Ok... fine:  
+- 1) Choose a DigitalPal to play with.  
+- 2) Each time that you play with your pal you have a posibility of experiencing different play outcomes.  
+- 3) After you've finished playing don't forget to eat something.  
+- 4) Once you've had a full "day" it's time to go to sleep.  
+- 5) Wake up and have another full "day" with your DigitalPal and/or choose a different DigitalPal to play with.  
+It's as simple as that!
 
 # Install  
 Create a folder where you would like to access this game and run the following commands in this directory from your command line.  
