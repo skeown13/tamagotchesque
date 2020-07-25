@@ -223,3 +223,7 @@ function initial() {
 }
 
 initial()
+
+module.exports = {
+  game: () => initial()
+}
