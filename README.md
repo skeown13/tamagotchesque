@@ -9,11 +9,11 @@
 **How does it work?** Using Node of course.  
 **Why should I?** Why not?  
 **A little more information please?** Ok... fine:  
-- 1) Choose a DigitalPal to play with.  
-- 2) Each time that you play with your pal you have a posibility of experiencing different play outcomes.  
-- 3) After you've finished playing don't forget to eat something.  
-- 4) Once you've had a full "day" it's time to go to sleep.  
-- 5) Wake up and have another full "day" with your DigitalPal and/or choose a different DigitalPal to play with.  
+- Choose a DigitalPal to play with.  
+- Each time that you play with your pal you have a posibility of experiencing different play outcomes.  
+- After you've finished playing don't forget to eat something.  
+- Once you've had a full "day" it's time to go to sleep.  
+- Wake up and have another full "day" with your DigitalPal and/or choose a different DigitalPal to play with.  
 
 It's as simple as that!
 
