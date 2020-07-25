@@ -2,11 +2,11 @@ let inquirer = require("inquirer")
 let colors = require("colors")
 let fs = require("fs")
 
-eval(fs.readFileSync("./tamagotchesque/assets/javascript/dog.js") + "")
-eval(fs.readFileSync("./tamagotchesque/assets/javascript/cat.js") + "")
-eval(fs.readFileSync("./tamagotchesque/assets/javascript/owl.js") + "")
-eval(fs.readFileSync("./tamagotchesque/assets/javascript/bunny.js") + "")
-eval(fs.readFileSync("./tamagotchesque/assets/javascript/elephant.js") + "")
+eval(fs.readFileSync("./node_modules/tamagotchesque/assets/javascript/dog.js") + "")
+eval(fs.readFileSync("./node_modules/tamagotchesque/assets/javascript/cat.js") + "")
+eval(fs.readFileSync("./node_modules/tamagotchesque/assets/javascript/owl.js") + "")
+eval(fs.readFileSync("./node_modules/tamagotchesque/assets/javascript/bunny.js") + "")
+eval(fs.readFileSync("./node_modules/tamagotchesque/assets/javascript/elephant.js") + "")
 
 // The Original Constructor used as the base for all animals
 
