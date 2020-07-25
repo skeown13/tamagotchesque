@@ -1,6 +1,6 @@
 {
   "name": "tamagotchesque",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A tamagotchi type game played in the terminal.",
   "main": "game.js",
   "scripts": {
